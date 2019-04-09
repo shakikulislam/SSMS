@@ -1,4 +1,6 @@
-﻿namespace SSMS.Models
+﻿using System.ComponentModel;
+
+namespace SSMS.Models.Models
 {
     public class Supplier
     {
@@ -8,6 +10,8 @@
         public string Address { get; set; }
         public string Email { get; set; }
         public string Contact { get; set; }
+
+        [DisplayName ("Contact Person")]
         public string ContactPerson { get; set; }
         public byte[] Image { get; set; }
 

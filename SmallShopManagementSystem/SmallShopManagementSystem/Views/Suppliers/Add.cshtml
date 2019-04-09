@@ -1,4 +1,4 @@
-﻿@model SSMS.Models.Supplier
+﻿@model SSMS.Models.Models.Supplier
 
 
 @{
@@ -20,7 +20,8 @@
         <tr><td>@Html.LabelFor(c=>c.Contact)</td></tr>
         <tr><td>@Html.TextBoxFor(c=>c.Contact)</td></tr>
         <tr><td>@Html.LabelFor(c=>c.ContactPerson)</td></tr>
-        <tr><td>@Html.TextBoxFor(c => c.ContactPerson, "Contact Person")</td></tr>
+        <tr><td>@Html.TextBoxFor(c => c.ContactPerson)</td></tr>
+        <tr><td><input type="submit" value="Add"/></td></tr>
 
     </table>
 </form>

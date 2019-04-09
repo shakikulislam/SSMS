@@ -2,3 +2,9 @@ E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debu
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\SSMS.Models.pdb
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.Models\obj\Debug\SSMS.Models.dll
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.Models\obj\Debug\SSMS.Models.pdb
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\SSMS.Models.dll.config
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\EntityFramework.dll
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\EntityFramework.SqlServer.dll
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\EntityFramework.xml
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\EntityFramework.SqlServer.xml
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.Models\obj\Debug\SSMS.Models.csprojResolveAssemblyReference.cache
