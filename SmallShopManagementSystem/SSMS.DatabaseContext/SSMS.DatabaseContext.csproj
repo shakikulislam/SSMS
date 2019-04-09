@@ -48,9 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseContext\SSMSDbContext.cs" />
-    <Compile Include="Migrations\201904091638072_Supplier_Model_Creat.cs" />
-    <Compile Include="Migrations\201904091638072_Supplier_Model_Creat.Designer.cs">
-      <DependentUpon>201904091638072_Supplier_Model_Creat.cs</DependentUpon>
+    <Compile Include="Migrations\201904091641536_Supplier_Model.cs" />
+    <Compile Include="Migrations\201904091641536_Supplier_Model.Designer.cs">
+      <DependentUpon>201904091641536_Supplier_Model.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,8 +66,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201904091638072_Supplier_Model_Creat.resx">
-      <DependentUpon>201904091638072_Supplier_Model_Creat.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904091641536_Supplier_Model.resx">
+      <DependentUpon>201904091641536_Supplier_Model.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
