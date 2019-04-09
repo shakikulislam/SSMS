@@ -1,0 +1,9 @@
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.DAL.dll
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.DAL.pdb
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.DatabaseContext.dll
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.Models.dll
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.DatabaseContext.pdb
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.Models.pdb
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\obj\Debug\SSMS.DAL.csprojResolveAssemblyReference.cache
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\obj\Debug\SSMS.DAL.dll
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\obj\Debug\SSMS.DAL.pdb
