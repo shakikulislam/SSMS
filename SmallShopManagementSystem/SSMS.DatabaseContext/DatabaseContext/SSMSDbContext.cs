@@ -6,6 +6,8 @@ namespace SSMS.DatabaseContext.DatabaseContext
     public class SSMSDbContext : DbContext
     {
         public DbSet<Supplier> Suppliers { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Product> Products { get; set; }
 
     }
 }
