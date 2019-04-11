@@ -15,5 +15,28 @@ namespace SSMS.BLL.BLL
         {
             return _productRepository.Add(product);
         }
+
+
+        public bool Update(Product product)
+        {
+            bool isUpdate = _productRepository.Update(product);
+            return isUpdate;
+        }
+        public Product GetProductById(string code)
+        {
+            return _productRepository.GetProductById(code);
+        }
+
+        public bool Delete(Product product)
+        {
+            bool isDelete = _productRepository.Delete(product);
+            return isDelete;
+        }
+
+        public List<Product> Show(int index)
+        {
+            return _productRepository.Show(index);
+
+        }
     }
 }

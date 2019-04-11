@@ -28,3 +28,20 @@ C:\Users\Web App Develop .Net\Desktop\New folder (2)\SSMS\SmallShopManagementSys
 C:\Users\Web App Develop .Net\Desktop\New folder (2)\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.pdb
 C:\Users\Web App Develop .Net\Desktop\New folder (2)\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Category_Add.resources
 C:\Users\Web App Develop .Net\Desktop\New folder (2)\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Product_Add.resources
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\SSMS.DatabaseContext.dll.config
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\SSMS.DatabaseContext.dll
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\SSMS.DatabaseContext.pdb
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\EntityFramework.dll
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\SSMS.Models.dll
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\SSMS.Models.pdb
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\EntityFramework.xml
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.csprojResolveAssemblyReference.cache
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Supplier_Model.resources
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Category_Add.resources
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Product_Add.resources
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.csproj.GenerateResource.Cache
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.dll
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.pdb
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Add_New_Product_And_Category.resources

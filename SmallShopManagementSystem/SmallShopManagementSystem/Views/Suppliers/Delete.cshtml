@@ -1,0 +1,27 @@
+﻿@model SSMS.Models.Models.Supplier
+
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<form method="POST">
+    <h1>Delete</h1>
+    @if (ViewBag.SDeleted != null)
+    {
+        <p>Delete Successfully!!</p>
+    }
+    else if (ViewBag.NSDelete != null)
+    {
+        <p>Delete Failed!!</p>
+    }
+    <table>
+        <tr><td>@Html.LabelFor(c => c.Code)</td></tr>
+        <tr><td>@Html.TextBoxFor(c => c.Code)</td></tr>
+       
+        <tr><td><input type="submit" value="Delete" /></td></tr>
+
+    </table>
+</form>

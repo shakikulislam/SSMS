@@ -41,5 +41,96 @@ namespace SmallShopManagementSystem.Controllers
             }
             return View();
         }
+
+        [HttpGet]
+        public ActionResult Update()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Update(Supplier supplier)
+        {
+
+            try
+            {
+                var aSupplier = _supplier.GetSupplierById(supplier.Code);
+                if (aSupplier != null)
+                {
+
+                    aSupplier.Code = supplier.Code;
+                    aSupplier.Name = supplier.Name;
+                    aSupplier.Address = supplier.Address;
+                    aSupplier.Email = supplier.Email;
+                    aSupplier.Contact = supplier.Contact;
+                    aSupplier.ContactPerson = supplier.ContactPerson;
+
+                    var isUpdate = _supplier.Update(aSupplier);
+                    if (isUpdate)
+                    {
+                        ViewBag.SUpdate = "Update Success.";
+                    }
+                    else
+                    {
+                        ViewBag.FUpdate = "Update Failed.";
+                    }
+                }
+                else
+                {
+                    ViewBag.FMsg = "Supplier not found.";
+                }
+            }
+            catch (Exception exception)
+            {
+                ViewBag.FMsg = exception.Message;
+            }
+            return View();
+        }
+
+
+        [HttpGet]
+        public ActionResult Delete()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Delete(Supplier supplier)
+        {
+            try
+            {
+                var aSupplier = _supplier.GetSupplierById(supplier.Code);
+                if (aSupplier != null)
+                {
+                    var isDelete = _supplier.Delete(aSupplier);
+                    if (isDelete)
+                    {
+                        ViewBag.SDeleted = "Delete Success.";
+                    }
+                    else
+                    {
+                        ViewBag.NSDelete = "Delete Failed.";
+                    }
+                }
+                else
+                {
+                    ViewBag.FMsg = "Supplier not found.";
+                }
+            }
+            catch (Exception exception)
+            {
+
+                ViewBag.FMsg = exception.Message;
+            }
+            return View();
+        }
+
+        private const int index = 1;
+
+
+        public ActionResult Show(Supplier supplier)
+        {
+            List<Supplier> aSupplier = _supplier.Show(index);
+            return View(aSupplier);
+
+        }
 	}
 }

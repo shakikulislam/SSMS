@@ -1,0 +1,36 @@
+﻿@model List<SSMS.Models.Models.Category>
+
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    table, td, th {
+        border: 1px solid black;
+    }
+</style>
+<h1> Categories Details </h1>
+@*<p id="HeadTitle"> Categories Details </p>*@
+<table style="width:50%">
+    <tr id="tableHeader">
+
+        <th>Code</th>
+        <th>Name</th>
+       
+
+    </tr>
+    @foreach (var aCategory in Model)
+    {
+        <tr>
+
+            <td>@aCategory.Code</td>
+            <td>@aCategory.Name</td>
+           
+
+        </tr>
+    }
+
+</table>
+
+
+

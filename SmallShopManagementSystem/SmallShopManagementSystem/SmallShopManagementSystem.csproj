@@ -115,6 +115,15 @@
     <Content Include="Views\Suppliers\Add.cshtml" />
     <Content Include="Views\Categories\Add.cshtml" />
     <Content Include="Views\Products\Add.cshtml" />
+    <Content Include="Views\Products\Update.cshtml" />
+    <Content Include="Views\Products\Show.cshtml" />
+    <Content Include="Views\Products\Delete.cshtml" />
+    <Content Include="Views\Categories\Update.cshtml" />
+    <Content Include="Views\Categories\Delete.cshtml" />
+    <Content Include="Views\Categories\Show.cshtml" />
+    <Content Include="Views\Suppliers\Update.cshtml" />
+    <Content Include="Views\Suppliers\Delete.cshtml" />
+    <Content Include="Views\Suppliers\Show.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

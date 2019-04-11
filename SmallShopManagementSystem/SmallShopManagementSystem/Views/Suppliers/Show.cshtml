@@ -1,0 +1,42 @@
+﻿@model List<SSMS.Models.Models.Supplier>
+
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    table, td, th {
+        border: 1px solid black;
+    }
+</style>
+<h1> Suppliers Details </h1>
+@*<p id="HeadTitle"> Suppliers Details </p>*@
+<table style="width:80%">
+    <tr id="tableHeader">
+
+        <th>Code</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Email</th>
+        <th>Contact</th>
+        <th>ContactPerson</th>
+
+    </tr>
+    @foreach (var aSupplier in Model)
+    {
+        <tr>
+
+            <td>@aSupplier.Code</td>
+            <td>@aSupplier.Name</td>
+            <td>@aSupplier.Address</td>
+            <td>@aSupplier.Email</td>
+            <td>@aSupplier.Contact</td>
+            <td>@aSupplier.ContactPerson</td>
+
+        </tr>
+    }
+
+</table>
+
+
+

@@ -2,19 +2,23 @@
 
 
 @{
-    ViewBag.Title = "Add";
+    ViewBag.Title = "Update";
     Layout = "~/Views/Shared/_Layout.cshtml";
 
 }
 
 
 <form method="POST">
-    <h1>Category</h1>
-    @if (ViewBag.SMsg != null)
+    <h1>Category Update</h1>
+    @if (ViewBag.SUpdate != null)
     {
-        <p>@ViewBag.SMsg</p>
+        <p>@ViewBag.SUpdate</p>
     }
-    @if (ViewBag.FMsg != null)
+    else if (ViewBag.FUpdate != null)
+    {
+        <p>@ViewBag.FUpdate</p>
+    }
+    else if (ViewBag.FMsg != null)
     {
         <p>@ViewBag.FMsg</p>
     }
@@ -25,7 +29,7 @@
         <tr><td>@Html.TextBoxFor(c => c.Name)</td></tr>
 
 
-        <tr><td><input type="submit" value="Add" /></td></tr>
+        <tr><td><input type="submit" value="Update" /></td></tr>
 
     </table>
 </form>

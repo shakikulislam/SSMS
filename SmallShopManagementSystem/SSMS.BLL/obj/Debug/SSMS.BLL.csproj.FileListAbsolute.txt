@@ -30,3 +30,19 @@ C:\Users\Web App Develop .Net\Desktop\New folder (2)\SSMS\SmallShopManagementSys
 C:\Users\Web App Develop .Net\Desktop\New folder (2)\SSMS\SmallShopManagementSystem\SSMS.BLL\obj\Debug\SSMS.BLL.csprojResolveAssemblyReference.cache
 C:\Users\Web App Develop .Net\Desktop\New folder (2)\SSMS\SmallShopManagementSystem\SSMS.BLL\obj\Debug\SSMS.BLL.dll
 C:\Users\Web App Develop .Net\Desktop\New folder (2)\SSMS\SmallShopManagementSystem\SSMS.BLL\obj\Debug\SSMS.BLL.pdb
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\SSMS.BLL.dll.config
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\SSMS.BLL.dll
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\SSMS.BLL.pdb
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\EntityFramework.dll
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\SSMS.DAL.dll
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\SSMS.Models.dll
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\SSMS.DatabaseContext.dll
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\SSMS.DAL.pdb
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\SSMS.Models.pdb
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\EntityFramework.xml
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\SSMS.DatabaseContext.pdb
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.BLL\obj\Debug\SSMS.BLL.csprojResolveAssemblyReference.cache
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.BLL\obj\Debug\SSMS.BLL.dll
+C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.BLL\obj\Debug\SSMS.BLL.pdb
