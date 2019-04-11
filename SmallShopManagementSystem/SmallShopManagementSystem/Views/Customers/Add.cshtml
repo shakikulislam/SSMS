@@ -1,0 +1,32 @@
+﻿@model SSMS.Models.Models.Customer
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>Add</h2>
+@if (ViewBag.SMsg != null)
+{
+    <p>@ViewBag.SMsg</p>
+}
+@if (ViewBag.FMsg != null)
+{
+    <p>@ViewBag.FMsg</p>
+}
+<form method="POST">
+    <table>
+        <tr><td>@Html.LabelFor(c => c.Code)</td></tr>
+        <tr><td>@Html.TextBoxFor(c => c.Code)</td></tr>
+        <tr><td>@Html.LabelFor(c => c.Name)</td></tr>
+        <tr><td>@Html.TextBoxFor(c => c.Name)</td></tr>
+        <tr><td>@Html.LabelFor(c => c.Address)</td></tr>
+        <tr><td>@Html.TextBoxFor(c => c.Address)</td></tr>
+        <tr><td>@Html.LabelFor(c => c.Email)</td></tr>
+        <tr><td>@Html.TextBoxFor(c => c.Email)</td></tr>
+        <tr><td>@Html.LabelFor(c => c.Contact)</td></tr>
+        <tr><td>@Html.TextBoxFor(c => c.Contact)</td></tr>
+        <tr><td>@Html.LabelFor(c => c.LoyalityPoint)</td></tr>
+        <tr><td>@Html.TextBoxFor(c => c.LoyalityPoint)</td></tr>
+        <tr><td><input type="submit" value="Add" /></td></tr>
+
+    </table>
+</form>

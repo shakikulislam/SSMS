@@ -53,6 +53,10 @@
     <Compile Include="Migrations\201904091641536_Supplier_Model.Designer.cs">
       <DependentUpon>201904091641536_Supplier_Model.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904110441027_Customer_Model_Add.cs" />
+    <Compile Include="Migrations\201904110441027_Customer_Model_Add.Designer.cs">
+      <DependentUpon>201904110441027_Customer_Model_Add.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -69,6 +73,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201904091641536_Supplier_Model.resx">
       <DependentUpon>201904091641536_Supplier_Model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904110441027_Customer_Model_Add.resx">
+      <DependentUpon>201904110441027_Customer_Model_Add.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
