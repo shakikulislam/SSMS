@@ -12,7 +12,6 @@ E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\obj\Debug\S
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\obj\Debug\SSMS.DAL.pdb
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\EntityFramework.SqlServer.dll
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.DAL\obj\Debug\SSMS.DAL.csprojResolveAssemblyReference.cache
 C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.DAL.dll.config
 C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.DAL.dll
 C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.DAL.pdb
@@ -24,5 +23,6 @@ C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSM
 C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.Models.pdb
 C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\EntityFramework.xml
 C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.DAL\obj\Debug\SSMS.DAL.csprojResolveAssemblyReference.cache
 C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.DAL\obj\Debug\SSMS.DAL.dll
 C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.DAL\obj\Debug\SSMS.DAL.pdb

@@ -23,7 +23,7 @@ C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSM
 C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.csprojResolveAssemblyReference.cache
 C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Supplier_Model.resources
+C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Customer_Model_Add.resources
 C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.csproj.GenerateResource.Cache
 C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.dll
 C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.pdb
-C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Customer_Model_Add.resources

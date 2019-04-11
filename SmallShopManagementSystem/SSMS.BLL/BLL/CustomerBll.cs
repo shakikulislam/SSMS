@@ -15,5 +15,31 @@ namespace SSMS.BLL.BLL
         {
             return _customer.Add(customer);
         }
+
+        public Customer GetCustomerById(string code)
+        {
+            return _customer.GetCustomerById(code);
+        }
+
+        public bool Update(Customer customer)
+        {
+            return _customer.Update(customer);
+        }
+
+        public bool Delete(Customer customer)
+        {
+            bool deleted = _customer.Delete(customer);
+
+            return deleted;
+        }
+
+       
+
+        public List<Customer> Show()
+        {
+            var model = new List<Customer>();
+            model = _customer.Show();
+            return model;
+        }
     }
 }

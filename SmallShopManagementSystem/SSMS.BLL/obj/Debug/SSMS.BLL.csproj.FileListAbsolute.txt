@@ -14,7 +14,6 @@ E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\S
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\EntityFramework.xml
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\EntityFramework.SqlServer.xml
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\SSMS.DatabaseContext.pdb
-C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.BLL\obj\Debug\SSMS.BLL.csprojResolveAssemblyReference.cache
 C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\SSMS.BLL.dll.config
 C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\SSMS.BLL.dll
 C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\SSMS.BLL.pdb
@@ -28,5 +27,6 @@ C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSM
 C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\EntityFramework.xml
 C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\SSMS.DatabaseContext.pdb
+C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.BLL\obj\Debug\SSMS.BLL.csprojResolveAssemblyReference.cache
 C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.BLL\obj\Debug\SSMS.BLL.dll
 C:\Users\Web App Develop.Net\Desktop\Project2\SSMS\SmallShopManagementSystem\SSMS.BLL\obj\Debug\SSMS.BLL.pdb

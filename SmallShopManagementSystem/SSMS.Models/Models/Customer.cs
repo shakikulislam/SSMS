@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 using System.ComponentModel;
 namespace SSMS.Models.Models
 {
-    public class Customer
+    public class Customer : IEnumerable
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -19,5 +20,9 @@ namespace SSMS.Models.Models
         [DisplayName("Loyality Point")]
         public string LoyalityPoint { get; set; }
         public byte[] Image { get; set; }
+        public IEnumerator GetEnumerator()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
