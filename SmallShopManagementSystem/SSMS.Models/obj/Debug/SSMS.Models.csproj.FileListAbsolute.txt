@@ -28,3 +28,13 @@ C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.Models\b
 C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.Models\obj\Debug\SSMS.Models.dll
 C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.Models\obj\Debug\SSMS.Models.pdb
 C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.Models\obj\Debug\SSMS.Models.csprojResolveAssemblyReference.cache
+C:\Users\Shakikul\Desktop\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\SSMS.Models.dll.config
+C:\Users\Shakikul\Desktop\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\SSMS.Models.dll
+C:\Users\Shakikul\Desktop\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\SSMS.Models.pdb
+C:\Users\Shakikul\Desktop\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\EntityFramework.dll
+C:\Users\Shakikul\Desktop\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Shakikul\Desktop\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\EntityFramework.xml
+C:\Users\Shakikul\Desktop\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Shakikul\Desktop\SSMS\SmallShopManagementSystem\SSMS.Models\obj\Debug\SSMS.Models.csprojResolveAssemblyReference.cache
+C:\Users\Shakikul\Desktop\SSMS\SmallShopManagementSystem\SSMS.Models\obj\Debug\SSMS.Models.dll
+C:\Users\Shakikul\Desktop\SSMS\SmallShopManagementSystem\SSMS.Models\obj\Debug\SSMS.Models.pdb
