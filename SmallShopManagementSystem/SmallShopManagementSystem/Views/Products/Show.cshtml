@@ -1,6 +1,6 @@
 ﻿@model List<SSMS.Models.Models.Product>
 
- <style>
+<style>
     table {
         border-collapse: collapse;
     }
@@ -9,32 +9,45 @@
         border: 1px solid black;
     }
 </style>
-<h1> Products Details </h1> 
-@*<p id="HeadTitle"> Products Details </p>*@          
-<table style="width:80%">
-    <tr id="tableHeader">
-      
-        <th>Code</th>
-        <th>Name</th>
-        <th>Category</th>
-        <th>ReorderLevel</th>
-        <th>Description</th>
-        
-    </tr>
-    @foreach (var aProduct in Model)
-    {
-        <tr>
-            
-            <td>@aProduct.Code</td>
-            <td>@aProduct.Name</td>
-            <td>@aProduct.Category</td>
-            <td>@aProduct.ReorderLevel</td>
-            <td>@aProduct.Description</td>
-          
+<h1> Products Details </h1>
+@*<p id="HeadTitle"> Products Details </p>*@
+
+@if (Model != null && Model.Count >= 0)
+{
+    var sl = 0;
+    <table style="width: 80%">
+        <tr id="tableHeader">
+
+            <th>SL</th>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>ReorderLevel</th>
+            <th>Description</th>
+            <th>Action</th>
+
         </tr>
-    }
-   
-</table>
+        @foreach (var aProduct in Model)
+        {
+            <tr>
+
+                <td>@(++sl)</td>
+                <td>@aProduct.Code</td>
+                <td>@aProduct.Name</td>
+                <td>@aProduct.Category</td>
+                <td>@aProduct.ReorderLevel</td>
+                <td>@aProduct.Description</td>
+                <td>
+                    @Html.ActionLink("Update,", "Update", "Products", new { id = aProduct.Id }, new { @target = "_blank" })
+                    @Html.ActionLink("Delete", "Delete", "Products", new { id = aProduct.Id }, new { @target = "_blank" })
+
+                </td>
+
+            </tr>
+        }
+
+    </table>
+}
 
 
 
