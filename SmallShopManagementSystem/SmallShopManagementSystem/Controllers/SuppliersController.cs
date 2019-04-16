@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -15,24 +16,29 @@ namespace SmallShopManagementSystem.Controllers
         SupplierBll _supplier=new SupplierBll();
 
         public ActionResult Add()
-        {
+        { 
             return View();
         }
 
         [HttpPost]
-        public ActionResult Add(Supplier supplier)
+        public ActionResult Add(Supplier supplier, HttpPostedFileBase UploadImage)
         {
             try
             {
-            var added = _supplier.Add(supplier);
-            if (added)
-            {
-                ViewBag.SMsg = "Save Success.";
-            }
-            else
-            {
-                ViewBag.FMsg = "Failed";
-            }
+                if (UploadImage != null)
+                {
+                    supplier.Image = new byte[UploadImage.ContentLength];
+                    UploadImage.InputStream.Read(supplier.Image, 0, UploadImage.ContentLength);
+                }
+                var added = _supplier.Add(supplier);
+                if (added)
+                {
+                    ViewBag.SMsg = "Save Success.";
+                }
+                else
+                {
+                    ViewBag.FMsg = "Failed";
+                }
 
             }
             catch (Exception exception)
@@ -42,7 +48,7 @@ namespace SmallShopManagementSystem.Controllers
             return View();
         }
 
-        [HttpGet]
+
         public ActionResult Update()
         {
             return View();

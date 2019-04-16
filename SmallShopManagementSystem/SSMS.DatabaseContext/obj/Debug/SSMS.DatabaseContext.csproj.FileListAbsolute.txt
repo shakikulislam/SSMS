@@ -16,3 +16,21 @@ D:\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseCo
 D:\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.dll
 D:\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.pdb
 D:\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Customer_Add.resources
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\SSMS.DatabaseContext.dll.config
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\SSMS.DatabaseContext.dll
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\SSMS.DatabaseContext.pdb
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\EntityFramework.dll
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\EntityFramework.SqlServer.dll
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\SSMS.Models.dll
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\SSMS.Models.pdb
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\EntityFramework.xml
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\EntityFramework.SqlServer.xml
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.csprojResolveAssemblyReference.cache
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Supplier_Model.resources
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Category_Add.resources
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Product_Add.resources
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Add_New_Product_And_Category.resources
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Customer_Add.resources
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.csproj.GenerateResource.Cache
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.dll
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.pdb
