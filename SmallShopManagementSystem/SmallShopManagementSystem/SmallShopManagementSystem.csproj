@@ -98,8 +98,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
+
+    <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\SuppliersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -124,6 +127,11 @@
     <Content Include="Views\Suppliers\Update.cshtml" />
     <Content Include="Views\Suppliers\Delete.cshtml" />
     <Content Include="Views\Suppliers\Show.cshtml" />
+
+    <Content Include="Views\Customers\Add.cshtml" />
+    <Content Include="Views\Customers\Update.cshtml" />
+    <Content Include="Views\Customers\Delete.cshtml" />
+    <Content Include="Views\Customers\Show.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

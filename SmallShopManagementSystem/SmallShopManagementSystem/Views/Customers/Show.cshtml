@@ -1,0 +1,56 @@
+﻿@*@using SSMS.Models.Models*@
+@*@model SSMS.Models.Models.Customer*@
+@model List<SSMS.Models.Models.Customer>
+<h1>Customer List</h1>
+<style>
+    table, th, td {
+        border: 1px solid black;
+        text-align: center;
+    }
+</style>
+<table style="width:100%">
+    <tr>
+        <th>Sl.</th>
+        <th>Code</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Email</th>
+        <th>Contact</th>
+        <th>LoyalityPoint</th>
+
+
+        @*<th>@Html.LabelFor(c => c.Code)</th>
+   
+    <th>@Html.LabelFor(c => c.Name)</th>
+    
+    <th>@Html.LabelFor(c => c.Address)</th>
+   
+    <th>@Html.LabelFor(c => c.Email)</th>
+   
+   <th>@Html.LabelFor(c => c.Contact)</th>
+   
+    <th>@Html.LabelFor(c => c.LoyalityPoint)</th>*@
+   
+    </tr>
+    @{int slNum = 0;}
+    @*@foreach (var customer in ViewData.Model as IList<SSMS.Models.Customer>)*@
+    @foreach (var acustomer in Model)
+    {
+        <tr>
+            <td>@(++slNum)</td>
+            <td>@acustomer.Code</td>
+            <td>@acustomer.Name</td>
+            <td>@acustomer.Address</td>
+            <td>@acustomer.Email</td>
+            <td>@acustomer.Contact</td>
+   
+            <td>@acustomer.LoyalityPoint</td>
+        </tr>
+
+    }
+</table>
+
+
+
+
+
