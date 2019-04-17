@@ -40,3 +40,17 @@ C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\
 C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.DAL\obj\Debug\SSMS.DAL.dll
 C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.DAL\obj\Debug\SSMS.DAL.pdb
 C:\Users\Shimleen\Desktop\MyProject\SSMS\SmallShopManagementSystem\SSMS.DAL\obj\Debug\SSMS.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Shimleen\Desktop\New folder\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.DAL.dll.config
+C:\Users\Shimleen\Desktop\New folder\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.DAL.dll
+C:\Users\Shimleen\Desktop\New folder\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.DAL.pdb
+C:\Users\Shimleen\Desktop\New folder\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\EntityFramework.dll
+C:\Users\Shimleen\Desktop\New folder\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Shimleen\Desktop\New folder\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.DatabaseContext.dll
+C:\Users\Shimleen\Desktop\New folder\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.Models.dll
+C:\Users\Shimleen\Desktop\New folder\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.DatabaseContext.pdb
+C:\Users\Shimleen\Desktop\New folder\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.Models.pdb
+C:\Users\Shimleen\Desktop\New folder\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\EntityFramework.xml
+C:\Users\Shimleen\Desktop\New folder\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Shimleen\Desktop\New folder\SSMS\SmallShopManagementSystem\SSMS.DAL\obj\Debug\SSMS.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Shimleen\Desktop\New folder\SSMS\SmallShopManagementSystem\SSMS.DAL\obj\Debug\SSMS.DAL.dll
+C:\Users\Shimleen\Desktop\New folder\SSMS\SmallShopManagementSystem\SSMS.DAL\obj\Debug\SSMS.DAL.pdb
