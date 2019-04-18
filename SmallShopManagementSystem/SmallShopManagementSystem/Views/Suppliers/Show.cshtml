@@ -37,9 +37,17 @@
 
                 <td>
                     @{
-                    var file = Convert.ToBase64String(aSupplier.Image);
-                    var image = string.Format("data:image/gif; base64,{0}", file);
-                    <img src="@image" width="50" height="50" />
+                        if (aSupplier.Image != null)
+                        {
+
+                            var file = Convert.ToBase64String(aSupplier.Image);
+                            var image = string.Format("data:image/gif; base64,{0}", file);
+                            <img src="@image" width="50" height="50"/>
+                        }
+                        else
+                        {
+                            <p>No Image</p>
+                        }
                     }
                 </td>
 

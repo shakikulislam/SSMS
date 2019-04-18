@@ -53,11 +53,19 @@
             @{*@
             
             <td>
-              
+
                 @{
-                var file = Convert.ToBase64String(acustomer.Image);
-                var image = string.Format("data:image/gif; base64,{0}", file);
-                    <img src="@image" width="50" height="50" />
+                    if (acustomer.Image != null)
+                    {
+
+                        var file = Convert.ToBase64String(acustomer.Image);
+                        var image = string.Format("data:image/gif; base64,{0}", file);
+                        <img src="@image" width="50" height="50"/>
+                    }
+                    else
+                    {
+                        <p>No Image</p>
+                    }
                 }
             </td>
             <td>
