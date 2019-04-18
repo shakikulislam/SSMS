@@ -3,80 +3,90 @@
 @model List<SSMS.Models.Models.Customer>
 
 
-<h1>Customer List</h1>
 
-<table class="table table-bordered table-hover">
-    <tr>
-        <th>Sl.</th>
-        <th>Code</th>
-        <th>Name</th>
-        <th>Address</th>
-        <th>Email</th>
-        <th>Contact</th>
-        <th>Loyality Point</th>
-        <th>Images</th>
-        <th>Action</th>
+<div class="panel panel-primary">
+    <div class="panel-heading">Customer List</div>
+    <div class="panel-body">
 
-        @*<th>@Html.LabelFor(c => c.Code)</th>
-   
-    <th>@Html.LabelFor(c => c.Name)</th>
-    
-    <th>@Html.LabelFor(c => c.Address)</th>
-   
-    <th>@Html.LabelFor(c => c.Email)</th>
-   
-   <th>@Html.LabelFor(c => c.Contact)</th>
-   
-    <th>@Html.LabelFor(c => c.LoyalityPoint)</th>*@
-   
-    </tr>
-    @{int slNum = 0;}
-    @*@foreach (var customer in ViewData.Model as IList<SSMS.Models.Customer>)*@
-    @foreach (var acustomer in Model)
-    {
-        <tr>
-            <td>@(++slNum)</td>
-            <td>@acustomer.Code</td>
-            <td>@acustomer.Name</td>
-            <td>@acustomer.Address</td>
-            <td>@acustomer.Email</td>
-            <td>@acustomer.Contact</td>
-   
-            <td>@acustomer.LoyalityPoint</td>
-            
-            
-            @*@model MvcLayoutHtmlHelper.Models.Purchase
+        @if (Model != null && Model.Count >= 0)
+        {
 
-            @{*@
-            
-            <td>
 
-                @{
-                    if (acustomer.Image != null)
-                    {
+            <table class="table table-bordered table-hover">
+                <tr>
+                    <th>Sl.</th>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Loyality Point</th>
+                    <th>Images</th>
+                    <th>Action</th>
 
-                        var file = Convert.ToBase64String(acustomer.Image);
-                        var image = string.Format("data:image/gif; base64,{0}", file);
-                        <img src="@image" width="50" height="50"/>
-                    }
-                    else
-                    {
-                        <p>No Image</p>
-                    }
+                    @*<th>@Html.LabelFor(c => c.Code)</th>
+
+                     <th>@Html.LabelFor(c => c.Name)</th>
+
+                     <th>@Html.LabelFor(c => c.Address)</th>
+
+                     <th>@Html.LabelFor(c => c.Email)</th>
+
+                    <th>@Html.LabelFor(c => c.Contact)</th>
+
+                     <th>@Html.LabelFor(c => c.LoyalityPoint)</th>*@
+
+                </tr>
+                @{ int slNum = 0; }
+                @*@foreach (var customer in ViewData.Model as IList<SSMS.Models.Customer>)*@
+                @foreach (var acustomer in Model)
+                {
+                    <tr>
+                        <td>@(++slNum)</td>
+                        <td>@acustomer.Code</td>
+                        <td>@acustomer.Name</td>
+                        <td>@acustomer.Address</td>
+                        <td>@acustomer.Email</td>
+                        <td>@acustomer.Contact</td>
+
+                        <td>@acustomer.LoyalityPoint</td>
+
+
+                        @*@model MvcLayoutHtmlHelper.Models.Purchase
+
+                        @{*@
+
+                        <td>
+
+                            @{
+                                if (acustomer.Image != null)
+                                {
+
+                                    var file = Convert.ToBase64String(acustomer.Image);
+                                    var image = string.Format("data:image/gif; base64,{0}", file);
+                                    <img src="@image" width="50" height="50"/>
+                                }
+                                else
+                                {
+                                    <p>No Image</p>
+                                }
+                            }
+                        </td>
+                        <td>
+                            @Html.ActionLink("Delete", "Delete", "Customers", new {Code = acustomer.Code}, new {@target = "_blank"})
+                        </td>
+
+
+
+                    </tr>
+
                 }
-            </td>
-            <td>
-                @Html.ActionLink("Delete", "Delete", "Customers", new {Code = acustomer.Code}, new {@target = "_blank"})
-            </td>
+            </table>
 
 
+        }
 
-        </tr>
-
-    }
-</table>
-
-
-
-
+    </div>
+    <div class="panel-footer">Page Number (Upcomming)</div>
+</div>
 
