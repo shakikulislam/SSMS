@@ -11,26 +11,41 @@
 </style>
 <h1> Categories Details </h1>
 @*<p id="HeadTitle"> Categories Details </p>*@
-<table style="width:50%">
-    <tr id="tableHeader">
 
-        <th>Code</th>
-        <th>Name</th>
+@if (Model != null && Model.Count >= 0)
+{
+    var sl = 0;
+    <table style="width: 50%">
+        <tr id="tableHeader">
+        
+            <th>SL  </th>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Action</th>
        
 
-    </tr>
-    @foreach (var aCategory in Model)
-    {
-        <tr>
+        </tr>
+        @foreach (var aCategory in Model)
+        {
+            <tr>
+                <td>@(++sl)</td>
+                <td>@aCategory.Code</td>
+                <td>@aCategory.Name</td>
+                <td>
+                    @Html.ActionLink("Update", "Update", "Categories", new {id = aCategory.Id}, new {@target = "_blank"})
+                    @Html.ActionLink("Delete", "Delete", "Categories", new {id = aCategory.Id}, new {@target = "_blank"})
 
-            <td>@aCategory.Code</td>
-            <td>@aCategory.Name</td>
+
+
+
+                </td>
            
 
-        </tr>
-    }
+            </tr>
+        }
 
-</table>
+    </table>
+}
 
 
 

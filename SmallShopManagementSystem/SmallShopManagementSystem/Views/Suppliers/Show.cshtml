@@ -11,32 +11,42 @@
 </style>
 <h1> Suppliers Details </h1>
 @*<p id="HeadTitle"> Suppliers Details </p>*@
-<table style="width:80%">
-    <tr id="tableHeader">
-
-        <th>Code</th>
-        <th>Name</th>
-        <th>Address</th>
-        <th>Email</th>
-        <th>Contact</th>
-        <th>ContactPerson</th>
-
-    </tr>
-    @foreach (var aSupplier in Model)
-    {
-        <tr>
-
-            <td>@aSupplier.Code</td>
-            <td>@aSupplier.Name</td>
-            <td>@aSupplier.Address</td>
-            <td>@aSupplier.Email</td>
-            <td>@aSupplier.Contact</td>
-            <td>@aSupplier.ContactPerson</td>
+@if (Model != null && Model.Count >= 0)
+{
+    var sl = 0;
+    <table style="width: 80%">
+        <tr id="tableHeader">
+            <th>SL</th>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Contact</th>
+            <th>ContactPerson</th>
+            <th>Action</th>
 
         </tr>
-    }
+        @foreach (var aSupplier in Model)
+        {
+            <tr>
+                <td>@(++sl)</td>
+                <td>@aSupplier.Code</td>
+                <td>@aSupplier.Name</td>
+                <td>@aSupplier.Address</td>
+                <td>@aSupplier.Email</td>
+                <td>@aSupplier.Contact</td>
+                <td>@aSupplier.ContactPerson</td>
+                <td>
+                    @Html.ActionLink("Update,", "Update", "Suppliers", new { id = aSupplier.Id }, new { @target = "_blank" })
+                    @Html.ActionLink("Delete", "Delete", "Suppliers", new { id = aSupplier.Id }, new { @target = "_blank" })
 
-</table>
+                </td>
+
+            </tr>
+        }
+
+    </table>
+}
 
 
 
