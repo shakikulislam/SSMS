@@ -18,7 +18,7 @@
         <th>Contact</th>
         <th>LoyalityPoint</th>
         <th>images</th>
-
+        <th>Action</th>
 
         @*<th>@Html.LabelFor(c => c.Code)</th>
    
@@ -60,7 +60,9 @@
                     <img src="@image" width="50" height="50" />
                 }
             </td>
-            
+            <td>
+                @Html.ActionLink("Delete", "Delete", "Customers", new { Code = acustomer.Code }, new { @target = "_blank" })
+            </td>
         </tr>
 
     }

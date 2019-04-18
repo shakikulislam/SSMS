@@ -1,5 +1,3 @@
-C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\obj\Debug\SmallShopManagementSystem.csprojResolveAssemblyReference.cache
-C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\obj\Debug\SmallShopManagementSystem.dll
 C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SmallShopManagementSystem.dll.config
 C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SmallShopManagementSystem.dll
 C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SmallShopManagementSystem.pdb
@@ -27,4 +25,6 @@ C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SmallShopMa
 C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Helpers.xml
 C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Mvc.xml
 C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.DAL.pdb
+C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\obj\Debug\SmallShopManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\obj\Debug\SmallShopManagementSystem.dll
 C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\obj\Debug\SmallShopManagementSystem.pdb
