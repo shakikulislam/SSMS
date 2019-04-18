@@ -1,12 +1,9 @@
 ﻿@model List<SSMS.Models.Models.Supplier>
 
 <style>
-    table {
-        border-collapse: collapse;
-    }
-
-    table, td, th {
+    table, th, td {
         border: 1px solid black;
+        text-align: center;
     }
 </style>
 <h1> Suppliers Details </h1>
@@ -23,6 +20,7 @@
             <th>Email</th>
             <th>Contact</th>
             <th>ContactPerson</th>
+            <th>Image</th>
             <th>Action</th>
 
         </tr>
@@ -36,6 +34,17 @@
                 <td>@aSupplier.Email</td>
                 <td>@aSupplier.Contact</td>
                 <td>@aSupplier.ContactPerson</td>
+
+                <td>
+                    @{
+                    var file = Convert.ToBase64String(aSupplier.Image);
+                    var image = string.Format("data:image/gif; base64,{0}", file);
+                    <img src="@image" width="50" height="50" />
+                    }
+                </td>
+
+
+
                 <td>
                     @Html.ActionLink("Update,", "Update", "Suppliers", new { id = aSupplier.Id }, new { @target = "_blank" })
                     @Html.ActionLink("Delete", "Delete", "Suppliers", new { id = aSupplier.Id }, new { @target = "_blank" })
