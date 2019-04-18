@@ -6,6 +6,7 @@
     ViewBag.Title = "Add";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<style type="text/css">.form-control { }</style>
 
 
 <form method="POST">
@@ -25,7 +26,7 @@
         <tr><td>@Html.LabelFor(c => c.Name)</td></tr>
         <tr><td>@Html.TextBoxFor(c => c.Name)</td></tr>
         <tr><td>@Html.LabelFor(c => c.Category)</td></tr>
-        <tr><td>@Html.TextBoxFor(c => c.Category)</td></tr>
+        <tr><td>@Html.DropDownListFor(c => c.CategoryId, Model.CategoryLookUp, new { @class = "form-control" })</td></tr>
         <tr><td>@Html.LabelFor(c => c.ReorderLevel)</td></tr>
         <tr><td>@Html.TextBoxFor(c => c.ReorderLevel)</td></tr>
         <tr><td>@Html.LabelFor(c => c.Description)</td></tr>

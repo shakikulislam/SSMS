@@ -14,3 +14,5 @@ C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SSMS.BLL\bi
 C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SSMS.BLL\obj\Debug\SSMS.BLL.csprojResolveAssemblyReference.cache
 C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SSMS.BLL\obj\Debug\SSMS.BLL.dll
 C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SSMS.BLL\obj\Debug\SSMS.BLL.pdb
+C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\System.Web.Mvc.dll
+C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\System.Web.Mvc.xml

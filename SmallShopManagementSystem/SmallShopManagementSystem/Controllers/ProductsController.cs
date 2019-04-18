@@ -4,22 +4,28 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using SSMS.BLL.BLL;
+using SSMS.DatabaseContext.DatabaseContext;
 using SSMS.Models.Models;
 
 namespace SmallShopManagementSystem.Controllers
 {
     public class ProductsController : Controller
     {
+        SSMSDbContext _db = new SSMSDbContext();
         private ProductBll _productBll = new ProductBll();
 
         public ActionResult Add()
         {
-            return View();
+            var model = new Product();
+            model.CategoryLookUp = GetCategorySelectListItems();
+            return View(model);
         }
 
         [HttpPost]
         public ActionResult Add(Product product)
         {
+            var model = new Product();
+            model.CategoryLookUp = GetCategorySelectListItems();
             try
             {
                 var added = _productBll.Add(product);
@@ -37,7 +43,7 @@ namespace SmallShopManagementSystem.Controllers
             {
                 ViewBag.FMsg = exception.Message;
             }
-            return View();
+            return View(model);
 
         }
 
@@ -130,6 +136,43 @@ namespace SmallShopManagementSystem.Controllers
             return View(aProduct);
 
         }
+        public List<SelectListItem> GetCategorySelectListItems()
+        {
+            var dataList = _db.Categories.ToList();
+
+            var categorySelectListItems = new List<SelectListItem>();
+
+            categorySelectListItems.AddRange(GetDefaultSelectListItem());
+
+            if (dataList != null && dataList.Count > 0)
+            {
+                foreach (var category in dataList)
+                {
+                    var selectListItem = new SelectListItem();
+                    selectListItem.Text = category.Name;
+                    selectListItem.Value = category.Id.ToString();
+
+                    categorySelectListItems.Add(selectListItem);
+                }
+            }
+            return categorySelectListItems;
+        }
+
+
+
+        public List<SelectListItem> GetDefaultSelectListItem()
+        {
+            var dataList = new List<SelectListItem>();
+            var defaultSelectListItem = new SelectListItem();
+            defaultSelectListItem.Text = "---Select---";
+            defaultSelectListItem.Value = "";
+            dataList.Add(defaultSelectListItem);
+            return dataList;
+        }
+        
+
+
+
 
 
 

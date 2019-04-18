@@ -16,3 +16,6 @@ C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SSMS.Databa
 C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.csproj.GenerateResource.Cache
 C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.dll
 C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.pdb
+C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\System.Web.Mvc.dll
+C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\System.Web.Mvc.xml
+C:\Users\Web App Develop .Net\Desktop\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Add_Product_dropdown_property.resources

@@ -157,6 +157,10 @@
       <Project>{b34fde90-cb48-4920-8354-d385e412096f}</Project>
       <Name>SSMS.BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SSMS.DatabaseContext\SSMS.DatabaseContext.csproj">
+      <Project>{F193091D-A976-46E3-88CB-FCA4E42882AD}</Project>
+      <Name>SSMS.DatabaseContext</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SSMS.Models\SSMS.Models.csproj">
       <Project>{9efc8fc7-a0b7-41f4-94aa-d5cab1c43546}</Project>
       <Name>SSMS.Models</Name>
