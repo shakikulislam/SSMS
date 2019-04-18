@@ -23,6 +23,7 @@ namespace SmallShopManagementSystem.Controllers
         {
             try
             {
+                
 
                 if (UploadImage != null)
                 {
