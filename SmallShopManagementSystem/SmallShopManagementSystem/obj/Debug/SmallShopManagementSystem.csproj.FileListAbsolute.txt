@@ -28,3 +28,31 @@ E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementS
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\obj\Debug\SmallShopManagementSystem.csprojResolveAssemblyReference.cache
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\obj\Debug\SmallShopManagementSystem.dll
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\obj\Debug\SmallShopManagementSystem.pdb
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SmallShopManagementSystem.dll.config
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SmallShopManagementSystem.dll
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SmallShopManagementSystem.pdb
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\EntityFramework.dll
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\EntityFramework.SqlServer.dll
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.BLL.dll
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.DatabaseContext.dll
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.Models.dll
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Helpers.dll
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Razor.dll
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Webpages.Deployment.dll
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Webpages.dll
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Webpages.Razor.dll
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.DAL.dll
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.BLL.pdb
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.DatabaseContext.pdb
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.Models.pdb
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\EntityFramework.xml
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\EntityFramework.SqlServer.xml
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Razor.xml
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Webpages.xml
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Webpages.Deployment.xml
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Webpages.Razor.xml
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Helpers.xml
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.DAL.pdb
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\obj\Debug\SmallShopManagementSystem.csprojResolveAssemblyReference.cache
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\obj\Debug\SmallShopManagementSystem.dll
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\obj\Debug\SmallShopManagementSystem.pdb
