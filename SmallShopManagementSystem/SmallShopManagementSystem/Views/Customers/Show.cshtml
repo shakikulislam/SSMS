@@ -1,14 +1,11 @@
 ﻿@*@using SSMS.Models.Models*@
 @*@model SSMS.Models.Models.Customer*@
 @model List<SSMS.Models.Models.Customer>
+
+
 <h1>Customer List</h1>
-<style>
-    table, th, td {
-        border: 1px solid black;
-        text-align: center;
-    }
-</style>
-<table style="width:100%">
+
+<table class="table table-bordered table-hover">
     <tr>
         <th>Sl.</th>
         <th>Code</th>
@@ -16,8 +13,8 @@
         <th>Address</th>
         <th>Email</th>
         <th>Contact</th>
-        <th>LoyalityPoint</th>
-        <th>images</th>
+        <th>Loyality Point</th>
+        <th>Images</th>
         <th>Action</th>
 
         @*<th>@Html.LabelFor(c => c.Code)</th>
@@ -69,8 +66,11 @@
                 }
             </td>
             <td>
-                @Html.ActionLink("Delete", "Delete", "Customers", new { Code = acustomer.Code }, new { @target = "_blank" })
+                @Html.ActionLink("Delete", "Delete", "Customers", new {Code = acustomer.Code}, new {@target = "_blank"})
             </td>
+
+
+
         </tr>
 
     }

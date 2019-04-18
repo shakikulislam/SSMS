@@ -1,25 +1,19 @@
 ﻿@model List<SSMS.Models.Models.Supplier>
 
-<style>
-    table, th, td {
-        border: 1px solid black;
-        text-align: center;
-    }
-</style>
 <h1> Suppliers Details </h1>
 @*<p id="HeadTitle"> Suppliers Details </p>*@
 @if (Model != null && Model.Count >= 0)
 {
     var sl = 0;
-    <table style="width: 80%">
-        <tr id="tableHeader">
+    <table class="table table-bordered table-hover">
+        <tr>
             <th>SL</th>
             <th>Code</th>
             <th>Name</th>
             <th>Address</th>
             <th>Email</th>
             <th>Contact</th>
-            <th>ContactPerson</th>
+            <th>Contact Person</th>
             <th>Image</th>
             <th>Action</th>
 
@@ -54,7 +48,7 @@
 
 
                 <td>
-                    @Html.ActionLink("Update,", "Update", "Suppliers", new { id = aSupplier.Id }, new { @target = "_blank" })
+                    @Html.ActionLink("Update", "Update", "Suppliers", new { id = aSupplier.Id }, new { @target = "_blank" })
                     @Html.ActionLink("Delete", "Delete", "Suppliers", new { id = aSupplier.Id }, new { @target = "_blank" })
 
                 </td>
