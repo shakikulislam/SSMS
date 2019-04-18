@@ -96,12 +96,12 @@ namespace SmallShopManagementSystem.Controllers
 
         }
 
-        [HttpPost]
-        public ActionResult Delete(Customer customer)
+        //[HttpPost]
+        public ActionResult Delete(string  Code)
         {
             try
             {
-                var aCustomer = _customer.GetCustomerById(customer.Code);
+                var aCustomer = _customer.GetCustomerById(Code);
                 if (aCustomer != null)
                 {
                     var isDelete = _customer.Delete(aCustomer);
@@ -126,10 +126,10 @@ namespace SmallShopManagementSystem.Controllers
             return View();
         }
 
-        public ActionResult Delete()
-        {
-            return View();
-        }
+        //public ActionResult Delete()
+        //{
+        //    return View();
+        //}
 
         public ActionResult Show()
         {
