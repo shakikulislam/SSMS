@@ -19,10 +19,16 @@ namespace SmallShopManagementSystem.Controllers
         }
 
         [HttpPost]
-        public ActionResult Add(Customer customer)
+        public ActionResult Add(Customer customer, HttpPostedFileBase UploadImage)
         {
             try
             {
+
+                if (UploadImage != null)
+                {
+                    customer.Image = new byte[UploadImage.ContentLength];
+                    UploadImage.InputStream.Read(customer.Image, 0, UploadImage.ContentLength);
+                }
                 var added = _customer.Add(customer);
                 if (added)
                 {
@@ -40,6 +46,8 @@ namespace SmallShopManagementSystem.Controllers
             }
             return View();
         }
+
+
 
         [HttpPost]
         public ActionResult Update(Customer customer)

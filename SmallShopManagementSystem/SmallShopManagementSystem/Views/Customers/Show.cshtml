@@ -17,6 +17,7 @@
         <th>Email</th>
         <th>Contact</th>
         <th>LoyalityPoint</th>
+        <th>images</th>
 
 
         @*<th>@Html.LabelFor(c => c.Code)</th>
@@ -45,6 +46,21 @@
             <td>@acustomer.Contact</td>
    
             <td>@acustomer.LoyalityPoint</td>
+            
+            
+            @*@model MvcLayoutHtmlHelper.Models.Purchase
+
+            @{*@
+            
+            <td>
+              
+                @{
+                var file = Convert.ToBase64String(acustomer.Image);
+                var image = string.Format("data:image/gif; base64,{0}", file);
+                <img src="@image" width="200" height="200" />
+                }
+            </td>
+            
         </tr>
 
     }
