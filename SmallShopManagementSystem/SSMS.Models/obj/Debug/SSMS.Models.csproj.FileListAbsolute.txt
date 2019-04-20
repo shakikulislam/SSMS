@@ -10,3 +10,15 @@ E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debu
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.Models\obj\Debug\SSMS.Models.csprojResolveAssemblyReference.cache
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.Models\obj\Debug\SSMS.Models.dll
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.Models\obj\Debug\SSMS.Models.pdb
+C:\Users\Shimleen\Desktop\19-4(Final Project)\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\SSMS.Models.dll.config
+C:\Users\Shimleen\Desktop\19-4(Final Project)\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\SSMS.Models.dll
+C:\Users\Shimleen\Desktop\19-4(Final Project)\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\SSMS.Models.pdb
+C:\Users\Shimleen\Desktop\19-4(Final Project)\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\EntityFramework.dll
+C:\Users\Shimleen\Desktop\19-4(Final Project)\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Shimleen\Desktop\19-4(Final Project)\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\System.Web.Mvc.dll
+C:\Users\Shimleen\Desktop\19-4(Final Project)\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\EntityFramework.xml
+C:\Users\Shimleen\Desktop\19-4(Final Project)\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Shimleen\Desktop\19-4(Final Project)\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\System.Web.Mvc.xml
+C:\Users\Shimleen\Desktop\19-4(Final Project)\SSMS\SmallShopManagementSystem\SSMS.Models\obj\Debug\SSMS.Models.csprojResolveAssemblyReference.cache
+C:\Users\Shimleen\Desktop\19-4(Final Project)\SSMS\SmallShopManagementSystem\SSMS.Models\obj\Debug\SSMS.Models.dll
+C:\Users\Shimleen\Desktop\19-4(Final Project)\SSMS\SmallShopManagementSystem\SSMS.Models\obj\Debug\SSMS.Models.pdb

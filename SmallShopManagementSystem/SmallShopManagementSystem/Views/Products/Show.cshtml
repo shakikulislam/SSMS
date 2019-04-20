@@ -24,6 +24,7 @@
             <th>Category</th>
             <th>ReorderLevel</th>
             <th>Description</th>
+            <th>Images</th>
             <th>Action</th>
 
         </tr>
@@ -37,6 +38,22 @@
                 <td>@aProduct.Category.Name</td>
                 <td>@aProduct.ReorderLevel</td>
                 <td>@aProduct.Description</td>
+                <td>
+
+                    @{
+            if (aProduct.Image != null)
+            {
+
+                var file = Convert.ToBase64String(aProduct.Image);
+                var image = string.Format("data:image/gif; base64,{0}", file);
+                <img src="@image" width="50" height="50" />
+            }
+            else
+            {
+                <p>No Image</p>
+            }
+                    }
+                </td>
                 <td>
                     @Html.ActionLink("Update,", "Update", "Products", new { id = aProduct.Id }, new { @target = "_blank" })
                     @Html.ActionLink("Delete", "Delete", "Products", new { id = aProduct.Id }, new { @target = "_blank" })

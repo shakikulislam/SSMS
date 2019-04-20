@@ -1,5 +1,4 @@
-﻿@using SSMS.Models.Models
-@model SSMS.Models.Models.Product
+﻿@model SSMS.Models.Models.Product
 
 
 @{
@@ -9,7 +8,7 @@
 <style type="text/css">.form-control { }</style>
 
 
-<form method="POST">
+@*<form method="POST">*@
     <h1>Product</h1>
    
     @if (ViewBag.SMsg != null)
@@ -20,6 +19,8 @@
     {
         <p>@ViewBag.FMsg</p>
     }
+    @using (Html.BeginForm("Add", "Products", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
     <table>
         <tr><td>@Html.LabelFor(c => c.Code)</td></tr>
         <tr><td>@Html.TextBoxFor(c => c.Code)</td></tr>
@@ -31,12 +32,14 @@
         <tr><td>@Html.TextBoxFor(c => c.ReorderLevel)</td></tr>
         <tr><td>@Html.LabelFor(c => c.Description)</td></tr>
         <tr><td>@Html.TextBoxFor(c => c.Description)</td></tr>
+        <tr><td><input type="file" name="UploadImage" class="btn btn-primary" /></td></tr>
+
 
         <tr><td><input type="submit" value="Add" /></td></tr>
 
     </table>
     
    
-</form>
 
 
+}

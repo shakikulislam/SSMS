@@ -73,6 +73,10 @@
     <Compile Include="Migrations\201904180604196_Add_Product_dropdown_property.Designer.cs">
       <DependentUpon>201904180604196_Add_Product_dropdown_property.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904182049584_Add_Purchase_Model.cs" />
+    <Compile Include="Migrations\201904182049584_Add_Purchase_Model.Designer.cs">
+      <DependentUpon>201904182049584_Add_Purchase_Model.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -104,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904180604196_Add_Product_dropdown_property.resx">
       <DependentUpon>201904180604196_Add_Product_dropdown_property.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904182049584_Add_Purchase_Model.resx">
+      <DependentUpon>201904182049584_Add_Purchase_Model.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

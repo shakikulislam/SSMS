@@ -1,0 +1,70 @@
+﻿@model SSMS.Models.Models.Purchase
+
+           
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style type="text/css">
+    
+</style>
+
+
+<form method="POST">
+    <h1>Purchase</h1>
+
+    @if (ViewBag.SMsg != null)
+    {
+        <p>@ViewBag.SMsg</p>
+    }
+    @if (ViewBag.FMsg != null)
+    {
+        <p>@ViewBag.FMsg</p>
+    }
+    <table>
+        <tr><td>@Html.LabelFor(c => c.Date)</td></tr>
+        <tr><td>@Html.TextBoxFor(c => c.Date)</td></tr>
+        <tr><td>@Html.LabelFor(c => c.Bill)</td></tr>
+        <tr><td>@Html.TextBoxFor(c => c.Bill)</td></tr>
+        <tr><td>@Html.LabelFor(c => c.Supplier)</td></tr>
+        <tr><td>@Html.DropDownListFor(c => c.SupplierId, Model.SupplierLookUp, new { @class = "form-control" })</td></tr>
+    </table>
+    <br/>
+    <table>
+        
+        
+        <tr><td>@Html.LabelFor(c => c.Product)</td></tr>
+        <tr><td>@Html.DropDownListFor(c => c.ProductId, Model.ProductLookUp, new { @class = "form-control" })</td></tr>
+        <tr><td>@Html.LabelFor(c => c.Code)</td></tr>
+        <tr><td>@Html.TextBoxFor(c => c.Code, new { @readonly = "readonly" })</td></tr>
+        <tr><td>@Html.LabelFor(c => c.ManufacturedDate)</td></tr>
+        <tr><td>@Html.TextBoxFor(c => c.ManufacturedDate)</td></tr>
+        <tr><td>@Html.LabelFor(c => c.ExpireDate)</td></tr>
+        <tr><td>@Html.TextBoxFor(c => c.ExpireDate)</td></tr>
+        <tr><td>@Html.LabelFor(c => c.Quantity)</td></tr>
+        <tr><td>@Html.TextBoxFor(c => c.Quantity)</td></tr>
+        <tr><td>@Html.LabelFor(c => c.UnitPrice)</td></tr>
+        <tr><td>@Html.TextBoxFor(c => c.UnitPrice)</td></tr>
+        <tr><td>@Html.LabelFor(c => c.TotalPrice)</td></tr>
+        <tr><td>@Html.TextBoxFor(c => c.TotalPrice, new { @readonly = "readonly" })</td></tr>
+        <tr><td>@Html.LabelFor(c => c.PreviousCostPrice)</td></tr>
+        <tr><td>@Html.TextBoxFor(c => c.PreviousCostPrice, new { @readonly = "readonly" })</td></tr>
+        <tr><td>@Html.LabelFor(c => c.PreviousMrp)</td></tr>
+        <tr><td>@Html.TextBoxFor(c => c.PreviousMrp, new { @readonly = "readonly" })</td></tr>
+        <tr><td>@Html.LabelFor(c => c.NewCostPrice)</td></tr>
+        <tr><td>@Html.TextBoxFor(c => c.NewCostPrice)</td></tr>
+        <tr><td>@Html.LabelFor(c => c.NewMrp)</td></tr>
+        <tr><td>@Html.TextBoxFor(c => c.NewMrp)</td></tr>
+        
+       
+        
+        <tr><td><input type="submit" value="Add" /></td></tr>
+
+    </table>
+    
+  
+</form>
+
+
+
+

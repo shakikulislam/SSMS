@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace SSMS.Models.Models
 {
@@ -14,6 +15,7 @@ namespace SSMS.Models.Models
         [DisplayName ("Contact Person")]
         public string ContactPerson { get; set; }
         public byte[] Image { get; set; }
+        public ICollection<Purchase> Purchases { get; set; }
 
     }
 }

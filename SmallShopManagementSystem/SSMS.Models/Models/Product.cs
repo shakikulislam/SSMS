@@ -25,6 +25,7 @@ namespace SSMS.Models.Models
         public byte[] Image { get; set; }
         [NotMapped]
         public List<SelectListItem> CategoryLookUp { get; set; }
+        public ICollection<Purchase> Purchases { get; set; }
 
     }
 }

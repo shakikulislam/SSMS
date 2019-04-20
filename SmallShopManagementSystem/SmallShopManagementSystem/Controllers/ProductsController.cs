@@ -22,12 +22,17 @@ namespace SmallShopManagementSystem.Controllers
         }
 
         [HttpPost]
-        public ActionResult Add(Product product)
+        public ActionResult Add(Product product, HttpPostedFileBase UploadImage)
         {
             var model = new Product();
             model.CategoryLookUp = GetCategorySelectListItems();
             try
             {
+                if (UploadImage != null)
+                {
+                    product.Image = new byte[UploadImage.ContentLength];
+                    UploadImage.InputStream.Read(product.Image, 0, UploadImage.ContentLength);
+                }
                 var added = _productBll.Add(product);
                 if (added)
                 {
@@ -170,10 +175,6 @@ namespace SmallShopManagementSystem.Controllers
             return dataList;
         }
         
-
-
-
-
 
 
 	}

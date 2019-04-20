@@ -1,0 +1,62 @@
+﻿@model System.Collections.Generic.List<SSMS.Models.Models.Purchase>
+
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    table, td, th {
+        border: 1px solid black;
+    }
+</style>
+<h1> Purchase Details </h1>
+@*<p id="HeadTitle"> Purchase Details </p>*@
+
+@if (Model != null && Model.Count >= 0)
+{
+    var sl = 0;
+    <table style="width: 80%">
+        <tr id="tableHeader">
+
+            <th>SL</th>
+            <th>Products(Code)</th>
+            <th>Manufactured Date</th>
+            <th>Expire Date</th>
+            <th>Purchased Quantity</th>
+            <th>Unit Price</th>
+            <th>Total Price</th>
+            <th>Previous CP</th>
+            <th>Previous MRP</th>
+            <th>New CP</th>
+            <th>New MRP</th>
+            <th>Action</th>
+
+        </tr>
+        @foreach (var aPurchase in Model)
+        {
+            <tr>
+
+                <td>@(++sl)</td>
+                <td>@aPurchase.Product.Name
+                    @aPurchase.Product.Code</td>
+                <td>@aPurchase.ManufacturedDate</td>
+                <td>@aPurchase.ExpireDate</td>
+                <td>@aPurchase.Quantity</td>
+                <td>@aPurchase.UnitPrice</td>
+                <td>@aPurchase.TotalPrice</td>
+                <td>@aPurchase.PreviousCostPrice</td>
+                <td>@aPurchase.PreviousMrp</td>
+                <td>@aPurchase.NewCostPrice</td>
+                <td>@aPurchase.NewMrp</td>
+                <td>
+                    @Html.ActionLink("Update,", "Update", "Purchases", new { id = aPurchase.Id }, new { @target = "_blank" })
+                    @Html.ActionLink("Delete", "Delete", "Purchases", new { id = aPurchase.Id }, new { @target = "_blank" })
+
+                </td>
+
+            </tr>
+        }
+
+    </table>
+}
+
