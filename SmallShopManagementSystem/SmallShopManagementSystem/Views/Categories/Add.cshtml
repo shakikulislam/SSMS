@@ -1,6 +1,8 @@
 ﻿@model SSMS.Models.Models.Category
 
 
+
+
 @{
     ViewBag.Title = "Add";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -25,14 +27,23 @@
         <tr><td>@Html.TextBoxFor(c => c.Name)</td></tr>
 
 
-        <tr><td><input type="submit" value="Add" /></td></tr>
-       
+        <tr><td><input type="submit" id="ShowPv" value="Add" /></td></tr>
+        
+        
 
 
     </table>
-    
-    <p> @Html.ActionLink("Show", "Show", "Categories", new { @target = "_blank" })</p>
-    
+
+    <p> @Html.ActionLink("Show", "Show", "Categories", new {@target = "_blank"})</p>
+
+
 
 
 </form>
+
+<div id="CategorieViewPv"></div>
+
+@section Scripts
+{
+    <script src="~/Scripts/Category/Add.js"></script>
+}

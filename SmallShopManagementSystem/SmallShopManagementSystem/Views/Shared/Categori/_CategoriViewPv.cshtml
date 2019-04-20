@@ -1,0 +1,43 @@
+﻿@model List<SSMS.Models.Models.Category>
+
+<h1> Test </h1>
+@*<p id="HeadTitle"> Categories Details </p>*@
+@using (@Html.BeginForm())
+{
+
+
+if (Model != null && Model.Count >= 0)
+ {
+     var sl = 0;
+     <table style="width: 50%">
+         <tr>
+
+             <th>SL </th>
+             <th>Code</th>
+             <th>Name</th>
+             <th>Action</th>
+
+
+         </tr>
+         @foreach (var aCategory in Model)
+         {
+             <tr>
+                 <td>@(++sl)</td>
+                 <td>@aCategory.Code</td>
+                 <td>@aCategory.Name</td>
+                 <td>
+                     @Html.ActionLink("Update", "Update", "Categories", new {id = aCategory.Id}, new {@target = "_blank"})
+                     @Html.ActionLink("Delete", "Delete", "Categories", new {id = aCategory.Id}, new {@target = "_blank"})
+
+                 </td>
+
+
+             </tr>
+         }
+
+     </table>
+ }
+
+
+
+}

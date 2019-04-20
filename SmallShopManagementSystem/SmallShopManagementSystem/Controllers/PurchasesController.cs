@@ -22,15 +22,13 @@ namespace SmallShopManagementSystem.Controllers
             return View(model);
         }
 
-       
-
         [HttpPost]
         public ActionResult Add(Purchase purchase)
         {
-            var model = new Purchase();
+            //var model = new Purchase();
            
-            model.SupplierLookUp = GetSupplierSelectListItems();
-            model.ProductLookUp = GetProductSelectListItems();
+            //model.SupplierLookUp = GetSupplierSelectListItems();
+            //model.ProductLookUp = GetProductSelectListItems();
             try
             {
                 var added = _purchaseBll.Add(purchase);
@@ -48,7 +46,8 @@ namespace SmallShopManagementSystem.Controllers
             {
                 ViewBag.FMsg = exception.Message;
             }
-            return View(model);
+            //return View(model);
+            return View();
         }
 
         [HttpGet]
@@ -99,7 +98,6 @@ namespace SmallShopManagementSystem.Controllers
             return View(model);
         }
 
-
         [HttpGet]
         public ActionResult Delete()
         {
@@ -137,7 +135,6 @@ namespace SmallShopManagementSystem.Controllers
         }
 
         private const int index = 1;
-
 
         public ActionResult Show(Purchase purchase)
         {
@@ -189,8 +186,6 @@ namespace SmallShopManagementSystem.Controllers
             return productSelectListItems;
         }
 
-
-
         public List<SelectListItem> GetDefaultSelectListItem()
         {
             var dataList = new List<SelectListItem>();
@@ -200,8 +195,6 @@ namespace SmallShopManagementSystem.Controllers
             dataList.Add(defaultSelectListItem);
             return dataList;
         }
-        
-
 
 
 	}

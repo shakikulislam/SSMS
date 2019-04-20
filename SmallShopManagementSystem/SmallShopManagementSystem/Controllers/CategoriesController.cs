@@ -129,6 +129,12 @@ namespace SmallShopManagementSystem.Controllers
         }
 
 
+        public PartialViewResult GetCategoriePv()
+        {
+            return PartialView("~/Views/Shared/Categori/_CategoriViewPv.cshtml");
+
+        }
+
 
     }
 }

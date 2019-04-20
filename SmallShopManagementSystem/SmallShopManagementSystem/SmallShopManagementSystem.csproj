@@ -95,6 +95,7 @@
     <None Include="Scripts\jquery-3.0.0.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Category\Add.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
     <Content Include="Scripts\jquery-3.0.0.slim.js" />
@@ -147,6 +148,7 @@
     <Content Include="Views\Purchases\Update.cshtml" />
     <Content Include="Views\Purchases\Show.cshtml" />
     <Content Include="Views\Purchases\Delete.cshtml" />
+    <Content Include="Views\Shared\Categori\_CategoriViewPv.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
