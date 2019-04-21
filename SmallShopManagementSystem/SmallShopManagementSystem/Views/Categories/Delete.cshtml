@@ -1,30 +1,17 @@
 ﻿@model SSMS.Models.Models.Category
-
+<h2>Category Delete</h2>
 
 @{
     ViewBag.Title = "Delete";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if (ViewBag.SDeleted != null)
+{
 
+    <p>Delete Successfully!!</p>
+}
+else if (ViewBag.NSDelete != null)
+{
+    <p>Delete Failed!!</p>
 }
 
 
-<form method="POST">
-    <h1>Category Delete</h1>
-    @if (ViewBag.SDeleted != null)
-    {
-        <p>Delete Successfully!!</p>
-    }
-    else if (ViewBag.NSDelete != null)
-    {
-        <p>Delete Failed!!</p>
-    }
-    <table>
-        <tr><td>@Html.LabelFor(c => c.Code)</td></tr>
-        <tr><td>@Html.TextBoxFor(c => c.Code)</td></tr>
-       
-
-
-        <tr><td><input type="submit" value="Delete" /></td></tr>
-
-    </table>
-</form>

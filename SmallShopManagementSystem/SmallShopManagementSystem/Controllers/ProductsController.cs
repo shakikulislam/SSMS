@@ -12,7 +12,7 @@ namespace SmallShopManagementSystem.Controllers
     public class ProductsController : Controller
     {
         SSMSDbContext _db = new SSMSDbContext();
-        private ProductBll _productBll = new ProductBll();
+         ProductBll _productBll = new ProductBll();
 
         public ActionResult Add()
         {
@@ -53,14 +53,16 @@ namespace SmallShopManagementSystem.Controllers
         }
 
         [HttpGet]
-        public ActionResult Update()
+        public ActionResult Update(string code)
         {
-            return View();
+            var aCustomer = _productBll.GetProductById(code);
+            return View(aCustomer);
         }
         [HttpPost]
         public ActionResult Update(Product product)
         {
-
+            var model = new Product();
+            model.CategoryLookUp = GetCategorySelectListItems();
             try
             {
                 var aProduct = _productBll.GetProductById(product.Code);
@@ -96,17 +98,11 @@ namespace SmallShopManagementSystem.Controllers
         }
 
 
-        [HttpGet]
-        public ActionResult Delete()
-        {
-            return View();
-        }
-        [HttpPost]
-        public ActionResult Delete(Product product)
+        public ActionResult Delete(string code)
         {
             try
             {
-                var aProduct = _productBll.GetProductById(product.Code);
+                var aProduct = _productBll.GetProductById(code);
                 if (aProduct != null)
                 {
                     var isDelete = _productBll.Delete(aProduct);

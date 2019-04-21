@@ -1,4 +1,5 @@
 ﻿@model SSMS.Models.Models.Customer
+
 @{
     ViewBag.Title = "Add";
 }
@@ -12,6 +13,7 @@
 {
     <p>@ViewBag.FMsg</p>
 }
+
 @*<form method="POST">*@
     @using (Html.BeginForm("Add", "Customers", FormMethod.Post, new {enctype = "multipart/form-data"}))
     {
@@ -29,9 +31,18 @@
             <tr><td>@Html.TextBoxFor(c => c.Contact)</td></tr>
             <tr><td>@Html.LabelFor(c => c.LoyalityPoint)</td></tr>
             <tr><td>@Html.TextBoxFor(c => c.LoyalityPoint)</td></tr>
-            <tr><td><input type="file" name="UploadImage" class="btn btn-primary" /></td></tr>
+            <tr><td><input type="file" name="UploadImage" id="imgInp" class="btn btn-primary" /></td></tr>
+            <tr> <td>
+    <img style="height:200px; width:220px" id="blah" src="#" alt="image" />
+</td></tr>
             <tr><td><input type="submit" value="Add" /></td></tr>
 
         </table>
     }
+
+
+
+
 @*</form>*@
+<script src="~/Scripts/jquery-3.0.0.min.js"></script>
+<script src="~/Scripts/SSMS/Customer/ShowImageUpload.js"></script>

@@ -1,11 +1,12 @@
 ﻿@model SSMS.Models.Models.Customer
-
 <h2>Delete</h2>
+
 @{
     ViewBag.Title = "Delete";
 }
 @if (ViewBag.SDeleted != null)
-{
+{ 
+   
     <p>Delete Successfully!!</p>
 }
 else if (ViewBag.NSDelete != null)
@@ -13,15 +14,4 @@ else if (ViewBag.NSDelete != null)
     <p>Delete Faild!!</p>
 }
 
-
-
-@*<form method="POST">
-    <table>
-        <tr><td>@Html.LabelFor(c => c.Code)</td></tr>
-        <tr><td>@Html.TextBoxFor(c => c.Code)</td></tr>
-       
-        <tr><td><input type="submit" value="Add" /></td></tr>
-
-    </table>
-</form>*@
 

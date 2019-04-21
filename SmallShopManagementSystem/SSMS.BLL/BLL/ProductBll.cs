@@ -19,8 +19,7 @@ namespace SSMS.BLL.BLL
 
         public bool Update(Product product)
         {
-            bool isUpdate = _productRepository.Update(product);
-            return isUpdate;
+            return _productRepository.Update(product);
         }
         public Product GetProductById(string code)
         {

@@ -24,7 +24,7 @@ namespace SSMS.DAL.DAL
 
         public Category GetCategoryById(int id)
         {
-            Category nCategory = _db.Categories.Where(c => c.Id == id).FirstOrDefault();
+            Category nCategory = _db.Categories.FirstOrDefault(c => c.Id == id);
             return nCategory;
         }
 
@@ -40,6 +40,7 @@ namespace SSMS.DAL.DAL
                 isDeleted = true;
 
             return isDeleted;
+
         }
 
 
@@ -62,11 +63,17 @@ namespace SSMS.DAL.DAL
             var category = _db.Categories.FirstOrDefault(c => c.Code == code);
             return category;
         }
-
-
-        public List<Category> Show(int index)
+        public List<Category> Show()
         {
             return _db.Categories.ToList();
         }
+
+
+        //public List<Category> Show(int index)
+        //{
+        //    return _db.Categories.ToList();
+        //}
+
+      
     }
 }

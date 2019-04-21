@@ -9,43 +9,48 @@
         border: 1px solid black;
     }
 </style>
-<h1> Categories Details </h1>
-@*<p id="HeadTitle"> Categories Details </p>*@
 
-@if (Model != null && Model.Count >= 0)
-{
-    var sl = 0;
-    <table style="width: 50%">
-        <tr id="tableHeader">
-        
-            <th>SL  </th>
-            <th>Code</th>
-            <th>Name</th>
-            <th>Action</th>
-       
 
-        </tr>
-        @foreach (var aCategory in Model)
+<div class="panel panel-primary">
+    <div class="panel-heading">Category Details</div>
+    <div class="panel-body">
+
+        @if (Model != null && Model.Count >= 0)
         {
-            <tr>
-                <td>@(++sl)</td>
-                <td>@aCategory.Code</td>
-                <td>@aCategory.Name</td>
-                <td>
-                    @Html.ActionLink("Update", "Update", "Categories", new {id = aCategory.Id}, new {@target = "_blank"})
-                    @Html.ActionLink("Delete", "Delete", "Categories", new {id = aCategory.Id}, new {@target = "_blank"})
+            var sl = 0;
+              
+             <table class="table table-bordered table-hover">
+                 <tr id="tableHeader">
+                     <th>SL  </th>
+                     <th>Code</th>
+                     <th>Name</th>
+                     <th>Action</th>
+
+
+                 </tr>
+                @foreach (var aCategory in Model)
+                {
+                    <tr>
+                        <td>@(++sl)</td>
+                        <td>@aCategory.Code</td>
+                        <td>@aCategory.Name</td>
+                        <td>
+                            @Html.ActionLink("Edit,", "Update", "Categories", new { code = aCategory.Code }, new { @target = "_blank" })
+                            @Html.ActionLink("Delete", "Delete", "Categories", new { code = aCategory.Code }, new { @target = "_blank" })
 
 
 
 
-                </td>
-           
+                        </td>
 
-            </tr>
+
+                    </tr>
+                }
+
+            </table>
         }
 
-    </table>
-}
-
-
-
+    </div>
+    <div class="panel-footer">Page Number: 1 </div>
+</div>
+            

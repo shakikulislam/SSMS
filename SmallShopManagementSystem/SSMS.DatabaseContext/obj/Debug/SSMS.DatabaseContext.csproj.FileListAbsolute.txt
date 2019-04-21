@@ -19,6 +19,7 @@ E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.csproj.GenerateResource.Cache
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.dll
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.pdb
+<<<<<<< HEAD
 C:\Users\Shimleen\Desktop\19-4(Final Project)\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\SSMS.DatabaseContext.dll.config
 C:\Users\Shimleen\Desktop\19-4(Final Project)\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\SSMS.DatabaseContext.dll
 C:\Users\Shimleen\Desktop\19-4(Final Project)\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\SSMS.DatabaseContext.pdb
@@ -41,3 +42,24 @@ C:\Users\Shimleen\Desktop\19-4(Final Project)\SSMS\SmallShopManagementSystem\SSM
 C:\Users\Shimleen\Desktop\19-4(Final Project)\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.dll
 C:\Users\Shimleen\Desktop\19-4(Final Project)\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.pdb
 C:\Users\Shimleen\Desktop\19-4(Final Project)\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Add_Purchase_Model.resources
+=======
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\SSMS.DatabaseContext.dll.config
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\SSMS.DatabaseContext.dll
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\SSMS.DatabaseContext.pdb
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\EntityFramework.dll
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\EntityFramework.SqlServer.dll
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\SSMS.Models.dll
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\SSMS.Models.pdb
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\EntityFramework.xml
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\bin\Debug\EntityFramework.SqlServer.xml
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.csprojResolveAssemblyReference.cache
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Supplier_Model.resources
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Category_Add.resources
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Product_Add.resources
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Add_New_Product_And_Category.resources
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Customer_Add.resources
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Add_Product_dropdown_property.resources
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.csproj.GenerateResource.Cache
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.dll
+E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.pdb
+>>>>>>> 9f9b7b53f41aa55caa45151795fbee5f61939b7d

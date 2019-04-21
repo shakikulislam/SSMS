@@ -20,6 +20,7 @@ namespace SSMS.BLL.BLL
             bool isUpdate = _categoryRepository.Update(category);
             return isUpdate;
         }
+       
         public Category GetCategoryById(string code)
         {
             return _categoryRepository.GetCategoryById(code);
@@ -27,15 +28,22 @@ namespace SSMS.BLL.BLL
 
         public bool Delete(Category category)
         {
-            bool isDelete = _categoryRepository.Delete(category);
-            return isDelete;
-        }
+            bool deleted = _categoryRepository.Delete(category);
 
-        public List<Category> Show(int index)
+            return deleted;
+        }
+        public List<Category> Show()
         {
-            return _categoryRepository.Show(index);
-
+            var model = new List<Category>();
+            model = _categoryRepository.Show();
+            return model;
         }
+
+        //public List<Category> Show(int index)
+        //{
+        //    return _categoryRepository.Show(index);
+
+        //}
     }
 }
 

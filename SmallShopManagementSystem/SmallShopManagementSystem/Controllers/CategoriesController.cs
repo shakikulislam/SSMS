@@ -10,7 +10,7 @@ namespace SmallShopManagementSystem.Controllers
 {
     public class CategoriesController : Controller
     {
-        private CategoryBll _category = new CategoryBll();
+         CategoryBll _category = new CategoryBll();
 
         public ActionResult Add()
         {
@@ -41,9 +41,10 @@ namespace SmallShopManagementSystem.Controllers
 
         }
         [HttpGet]
-        public ActionResult Update()
+        public ActionResult Update(string code)
         {
-            return View();
+            var aCategory = _category.GetCategoryById(code);
+            return View(aCategory);
         }
         [HttpPost]
         public ActionResult Update(Category category)
@@ -82,23 +83,25 @@ namespace SmallShopManagementSystem.Controllers
         }
 
 
-        [HttpGet]
-        public ActionResult Delete()
-        {
-            return View();
-        }
-        [HttpPost]
-        public ActionResult Delete(Category category)
+        //[HttpGet]
+        //public ActionResult Delete()
+        //{
+        //    return View();
+        //}
+
+        public ActionResult Delete(string code)
         {
             try
             {
-                var aCategory = _category.GetCategoryById(category.Code);
+                var aCategory = _category.GetCategoryById(code);
                 if (aCategory != null)
                 {
                     var isDelete = _category.Delete(aCategory);
                     if (isDelete)
                     {
+
                         ViewBag.SDeleted = "Delete Success.";
+                        //return RedirectToAction("Show");
                     }
                     else
                     {
@@ -112,19 +115,25 @@ namespace SmallShopManagementSystem.Controllers
             }
             catch (Exception exception)
             {
-
                 ViewBag.FMsg = exception.Message;
             }
             return View();
         }
 
-        private const int index = 1;
+        //private const int index = 1;
 
 
-        public ActionResult Show(Category category)
+        //public ActionResult Show(Category category)
+        //{
+        //    List<Category> aCategory = _category.Show();
+        //    return View(aCategory);
+
+        //}
+
+        public ActionResult Show()
         {
-            List<Category> aCategory = _category.Show(index);
-            return View(aCategory);
+            var dataList = _category.Show();
+            return View(dataList);
 
         }
 

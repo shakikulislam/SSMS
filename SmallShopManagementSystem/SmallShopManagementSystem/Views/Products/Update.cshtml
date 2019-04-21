@@ -3,37 +3,39 @@
 
 @{
     ViewBag.Title = "Add";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-
-<form method="POST">
     <h1>Product Update</h1>
-    @if (ViewBag.SUpdate != null)
-    {
-        <p>@ViewBag.SUpdate</p>
-    }
-    else if (ViewBag.FUpdate != null)
-    {
-        <p>@ViewBag.FUpdate</p>
-    }
-    else if (ViewBag.FMsg != null)
-    {
-        <p>@ViewBag.FMsg</p>
-    }
-    <table>
-        <tr><td>@Html.LabelFor(c => c.Code)</td></tr>
-        <tr><td>@Html.TextBoxFor(c => c.Code)</td></tr>
-        <tr><td>@Html.LabelFor(c => c.Name)</td></tr>
-        <tr><td>@Html.TextBoxFor(c => c.Name)</td></tr>
-        <tr><td>@Html.LabelFor(c => c.Category)</td></tr>
-        <tr><td>@Html.TextBoxFor(c => c.Category)</td></tr>
-        <tr><td>@Html.LabelFor(c => c.ReorderLevel)</td></tr>
-        <tr><td>@Html.TextBoxFor(c => c.ReorderLevel)</td></tr>
-        <tr><td>@Html.LabelFor(c => c.Description)</td></tr>
-        <tr><td>@Html.TextBoxFor(c => c.Description)</td></tr>
+   @if (ViewBag.SUpdate != null)
+{
+    <p>@ViewBag.SUpdate</p>
+}
+else if (ViewBag.FUpdate != null)
+{
+    <p>@ViewBag.FUpdate</p>
+}
+else if (ViewBag.FMsg != null)
+{
+    <p>@ViewBag.FMsg</p>
+}
 
-        <tr><td><input type="submit" value="Update" /></td></tr>
+    @using (Html.BeginForm())
+    {@Html.AntiForgeryToken()
+        <table>
+            <tr><td>@Html.LabelFor(c => c.Code)</td></tr>
+            <tr><td>@Html.TextBoxFor(c => c.Code, new { @readonly = "readonly" })</td></tr>
+            <tr><td>@Html.LabelFor(c => c.Name)</td></tr>
+            <tr><td>@Html.TextBoxFor(c => c.Name)</td></tr>
+            <tr><td>@Html.LabelFor(c => c.Category)</td></tr>
+            @*<tr><td>@Html.DropDownListFor(c => c.CategoryId, Model.CategoryLookUp, new { @class = "form-control" })</td></tr>*@
 
-    </table>
-</form>
+            <tr><td>@Html.TextBoxFor(c => c.Category.Name)</td></tr>
+            <tr><td>@Html.LabelFor(c => c.ReorderLevel)</td></tr>
+            <tr><td>@Html.TextBoxFor(c => c.ReorderLevel)</td></tr>
+            <tr><td>@Html.LabelFor(c => c.Description)</td></tr>
+            <tr><td>@Html.TextBoxFor(c => c.Description)</td></tr>
+
+            <tr><td><input type="submit" value="Update" /></td></tr>
+
+        </table>
+    }
