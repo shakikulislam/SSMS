@@ -13,6 +13,8 @@ namespace SmallShopManagementSystem.Controllers
     {
         CustomerBll _customer = new CustomerBll();
 
+        ProductBll _product = new ProductBll();
+
         SSMSDbContext _db = new SSMSDbContext();
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -22,13 +24,15 @@ namespace SmallShopManagementSystem.Controllers
             if (ModelState.IsValid && sale.PurchaseDetailses != null && sale.PurchaseDetailses.Count > 0)
             {
                 var customerList = _customer.Show();
-                ViewBag.Products = customerList;
-                //if (purchase.UploadFiles != null && purchase.UploadFiles[0] != null)
-                //{
+                ViewBag.Customers = customerList;
 
 
-                //}
 
+                var productList = _product.GetProductList();
+                ViewBag.Products = productList;
+
+
+                
 
                 _db.Sales.Add(sale);
                 var isAdded = _db.SaveChanges() > 0;
@@ -45,8 +49,11 @@ namespace SmallShopManagementSystem.Controllers
 
         public ActionResult Create()
         {
+            var productList = _product.GetProductList();
+            ViewBag.Products = productList;
+
             var customerList = _customer.Show();
-            ViewBag.Products = customerList;
+            ViewBag.Customers = customerList;
             return View();
         }
 

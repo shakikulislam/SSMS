@@ -20,14 +20,13 @@
                             <select name="CustomerName" id="CustomerName" class="control-label col-md-4">
                                 @{
 
-                                    <option  selected>--Select--</option>
+                                    <option selected>--Select--</option>
 
-                                    foreach (var product in ViewBag.Products)
+                                 foreach (var customer in ViewBag.Customers)
                                     {
-                                        <option value="@product.Name"
-                                                            
-                                                data-desc="@product.LoyalityPoint">
-                                            @product.Name
+                                        <option value="@customer.Name"
+                                                data-desc="@customer.LoyalityPoint">
+                                            @customer.Name
                                         </option>
                                     }
                                 }
@@ -37,45 +36,46 @@
                         @*<tr><td>@Html.DropDownListFor(c => c.CategoryId, Model.CategoryLookUp, new { @class = "form-control" })</td></tr>*@
 
                         @*@Html.DropDownList("drpProducts",
-             new SelectList(Enum.GetValues(product.Id)),
-                            "---Select---",
-                            new { @class = "form-control" ,})*@
+                new SelectList(Enum.GetValues(product.Id)),
+                               "---Select---",
+                               new { @class = "form-control" ,})*@
 
                         <div class="col-md-4">
-                           
+
                         </div>
                     </div>
 
                     <div class="form-group row">
                         @Html.LabelFor(c => c.Date, "Date *", new { @class = "control-label col-md-4" })
                         <div class="col-md-4">
-                            
-                            
-                           @Html.TextBoxFor(c => c.Date, null, new { @class = "form-control" })
-                          
-                           
-                          
-                        
-                            </div>
-                    </div>
-                    <div class="form-group row">
-                        @Html.LabelFor(c => c.LoyalityPoint, "Loyality Point *", new { @class = "control-label col-md-4" })
-                        <div class="col-md-4">
-                            @Html.TextBoxFor(c => c.LoyalityPoint, null, new { @class = "form-control", id = "txtProductDescription" })
+
+                            @Html.TextBoxFor(c => c.Date, null, new { @class = "form-control" })
+
+
                         </div>
                     </div>
 
+                   
+                            
 
-                    @*<div class="form-group row">
+                            <div class="form-group row">
+                                @Html.LabelFor(c => c.LoyalityPoint, "Loyality Point *", new { @class = "control-label col-md-4" })
+                                <div class="col-md-4">
+                                    @Html.TextBoxFor(c => c.LoyalityPoint, null, new { @class = "form-control", id = "txtProductDescription" })
+                                </div>
+                            </div>
+
+
+                            @*<div class="form-group row">
                         @Html.LabelFor(c => c.Date, "Purchase Date *", new { @class = "control-label col-md-4" })
                         <div class="col-md-4">
                             @Html.TextBoxFor(c => c.Date, null, new { @class = "form-control" })
                         </div>
                     </div>*@
 
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
 
         <div class="panel-group">
@@ -87,7 +87,25 @@
                     <div class="form-group row">
                         @Html.Label("ProductName", "Product Name *", new { @class = "control-label col-md-4" })
                         <div class="col-md-4">
-                            @Html.TextBox("ProductName", null, new { @class = "form-control" })
+                            
+                            <select name="ProductName" id="ProductName" class="control-label col-md-4">
+                                @{
+
+                                    <option selected>--Select--</option>
+
+                                                    foreach (var product in ViewBag.Products)
+                                    {
+                                                        <option value="@product.Name"
+                                                                data-desc2="@product.AvailableQuantity">
+                                                            @product.Name
+                                                        </option>
+                                    }
+                                                                }
+                                                            </select>
+
+
+
+                            @*@Html.TextBox("ProductName", null, new {@class = "form-control"})*@
                         </div>
                     </div>
 
@@ -95,7 +113,7 @@
                     <div class="form-group row">
                         @Html.Label("AvailableQuantity", "Available Quantity *", new { @class = "control-label col-md-4" })
                         <div class="col-md-4">
-                            @Html.TextBox("AvailableQuantity", null, new { @class = "form-control" })
+                            @Html.TextBox("AvailableQuantity", null, new { @class = "form-control", id = "AvailableQuantity" })
                         </div>
                     </div>
                     
@@ -177,7 +195,7 @@
         </div>
     </div>
 
-
+   
 
 
 
@@ -185,17 +203,23 @@
     <div class="col-md-4 col-md-offset-4">
         <input type="submit" class="btn btn-primary" value="Save" />
     </div>
+
+    
 }
+
+
+
 
 <script src="~/Scripts/jquery-3.0.0.min.js"></script>
 @section scripts
 {
     
-<script src="~/Scripts/SSMS/Sale/SaleCreate.js"></script>
+    <script src="~/Scripts/SSMS/Sale/SaleCreate.js"></script>
+    <script src="~/Scripts/SSMS/Sale/AutoDropdownCustomer.js"></script>
+<script src="~/Scripts/SSMS/Sale/AutoDropdownProduct.js"></script>
+    
 
 }
-
-<script src="~/Scripts/SSMS/Sale/AutoDropdown.js"></script>
 
 
 

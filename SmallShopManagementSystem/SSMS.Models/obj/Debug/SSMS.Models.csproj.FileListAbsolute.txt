@@ -38,6 +38,5 @@ E:\BITM\Project 2\MyBranch Touthid\v6\SSMS\SmallShopManagementSystem\SSMS.Models
 E:\BITM\Project 2\MyBranch Touthid\v6\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\EntityFramework.SqlServer.dll
 E:\BITM\Project 2\MyBranch Touthid\v6\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\EntityFramework.xml
 E:\BITM\Project 2\MyBranch Touthid\v6\SSMS\SmallShopManagementSystem\SSMS.Models\bin\Debug\EntityFramework.SqlServer.xml
-E:\BITM\Project 2\MyBranch Touthid\v6\SSMS\SmallShopManagementSystem\SSMS.Models\obj\Debug\SSMS.Models.csprojResolveAssemblyReference.cache
 E:\BITM\Project 2\MyBranch Touthid\v6\SSMS\SmallShopManagementSystem\SSMS.Models\obj\Debug\SSMS.Models.dll
 E:\BITM\Project 2\MyBranch Touthid\v6\SSMS\SmallShopManagementSystem\SSMS.Models\obj\Debug\SSMS.Models.pdb

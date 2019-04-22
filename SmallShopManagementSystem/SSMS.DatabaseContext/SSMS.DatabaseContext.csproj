@@ -81,6 +81,10 @@
     <Compile Include="Migrations\201904211940238_Add_SaleVM.Designer.cs">
       <DependentUpon>201904211940238_Add_SaleVM.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904222003511_Add_Available_Quantity_in_Product.cs" />
+    <Compile Include="Migrations\201904222003511_Add_Available_Quantity_in_Product.Designer.cs">
+      <DependentUpon>201904222003511_Add_Available_Quantity_in_Product.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -118,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904211940238_Add_SaleVM.resx">
       <DependentUpon>201904211940238_Add_SaleVM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904222003511_Add_Available_Quantity_in_Product.resx">
+      <DependentUpon>201904222003511_Add_Available_Quantity_in_Product.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

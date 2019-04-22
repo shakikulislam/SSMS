@@ -74,5 +74,10 @@ namespace SSMS.DAL.DAL
         {
             return _db.Products.ToList();
         }
+
+        public List<Product> GetProductList()
+        {
+            return _db.Products.ToList();
+        }
     }
 }

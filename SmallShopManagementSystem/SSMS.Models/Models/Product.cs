@@ -18,6 +18,7 @@ namespace SSMS.Models.Models
         public string Name { get; set; }
         public virtual Category Category { get; set; }
         public int CategoryId { get; set; }
+        public int AvailableQuantity { get; set; }
 
         [DisplayName("Reorder Level")]
         public int ReorderLevel { get; set; }
