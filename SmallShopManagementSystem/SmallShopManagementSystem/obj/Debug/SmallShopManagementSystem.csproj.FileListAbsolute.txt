@@ -1,5 +1,3 @@
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\obj\Debug\SmallShopManagementSystem.dll
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\obj\Debug\SmallShopManagementSystem.pdb
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SmallShopManagementSystem.dll.config
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SmallShopManagementSystem.dll
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SmallShopManagementSystem.pdb
@@ -28,3 +26,5 @@ E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementS
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Mvc.xml
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.DAL.pdb
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\obj\Debug\SmallShopManagementSystem.csprojResolveAssemblyReference.cache
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\obj\Debug\SmallShopManagementSystem.dll
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\obj\Debug\SmallShopManagementSystem.pdb

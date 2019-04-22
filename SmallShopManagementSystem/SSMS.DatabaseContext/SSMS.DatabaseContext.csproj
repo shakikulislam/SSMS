@@ -50,32 +50,36 @@
   <ItemGroup>
     <Compile Include="DatabaseContext\SSMSDbContext.cs" />
     <Compile Include="Migrations\201904091641536_Supplier_Model.cs" />
-    <Compile Include="Migrations\201904091641536_Supplier_Model.Designer.cs">
+    <Compile Include="Migrations\201904091641536_Supplier_Model.designer.cs">
       <DependentUpon>201904091641536_Supplier_Model.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201904110414089_Category_Add.cs" />
-    <Compile Include="Migrations\201904110414089_Category_Add.Designer.cs">
+    <Compile Include="Migrations\201904110414089_Category_Add.designer.cs">
       <DependentUpon>201904110414089_Category_Add.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201904110446258_Product_Add.cs" />
-    <Compile Include="Migrations\201904110446258_Product_Add.Designer.cs">
+    <Compile Include="Migrations\201904110446258_Product_Add.designer.cs">
       <DependentUpon>201904110446258_Product_Add.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201904111752493_Add_New_Product_And_Category.cs" />
-    <Compile Include="Migrations\201904111752493_Add_New_Product_And_Category.Designer.cs">
+    <Compile Include="Migrations\201904111752493_Add_New_Product_And_Category.designer.cs">
       <DependentUpon>201904111752493_Add_New_Product_And_Category.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201904160737227_Customer_Add.cs" />
-    <Compile Include="Migrations\201904160737227_Customer_Add.Designer.cs">
+    <Compile Include="Migrations\201904160737227_Customer_Add.designer.cs">
       <DependentUpon>201904160737227_Customer_Add.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201904180604196_Add_Product_dropdown_property.cs" />
-    <Compile Include="Migrations\201904180604196_Add_Product_dropdown_property.Designer.cs">
+    <Compile Include="Migrations\201904180604196_Add_Product_dropdown_property.designer.cs">
       <DependentUpon>201904180604196_Add_Product_dropdown_property.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201904182049584_Add_Purchase_Model.cs" />
-    <Compile Include="Migrations\201904182049584_Add_Purchase_Model.Designer.cs">
+    <Compile Include="Migrations\201904182049584_Add_Purchase_Model.designer.cs">
       <DependentUpon>201904182049584_Add_Purchase_Model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904220402456_Update_PurchaseDetails.cs" />
+    <Compile Include="Migrations\201904220402456_Update_PurchaseDetails.Designer.cs">
+      <DependentUpon>201904220402456_Update_PurchaseDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -89,6 +93,15 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Scripts\jquery-3.3.1.min.map" />
+    <None Include="Scripts\jquery-3.3.1.slim.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201904091641536_Supplier_Model.resx">
@@ -111,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904182049584_Add_Purchase_Model.resx">
       <DependentUpon>201904182049584_Add_Purchase_Model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904220402456_Update_PurchaseDetails.resx">
+      <DependentUpon>201904220402456_Update_PurchaseDetails.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
