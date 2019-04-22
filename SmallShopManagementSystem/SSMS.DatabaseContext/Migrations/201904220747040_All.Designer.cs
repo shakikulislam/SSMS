@@ -13,7 +13,7 @@ namespace SSMS.DatabaseContext.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201904220619245_All"; }
+            get { return "201904220747040_All"; }
         }
         
         string IMigrationMetadata.Source

@@ -16,8 +16,9 @@ namespace SmallShopManagementSystem.Controllers
 
         public ActionResult Add()
         {
-           
-            return View();
+            var model = new Purchase();
+            model.SupplierLookUp = GetSupplierSelectListItems();
+            return View(model);
         }
 
 
@@ -27,8 +28,11 @@ namespace SmallShopManagementSystem.Controllers
         public ActionResult Add(Purchase purchase)
         {
             if (ModelState.IsValid && purchase.PurchaseDetailses != null && purchase.PurchaseDetailses.Count > 0)
-           
             {
+                var model = new Purchase();
+
+                model.SupplierLookUp = GetSupplierSelectListItems();
+
                 _db.Purchases.Add(purchase);
                 var isPurchaseAdded = _db.SaveChanges();
                 if (isPurchaseAdded>0)
@@ -198,27 +202,27 @@ namespace SmallShopManagementSystem.Controllers
         //    return View(aPurchase);
 
         //}
-        //public List<SelectListItem> GetSupplierSelectListItems()
-        //{
-        //    var dataList = _db.Suppliers.ToList();
+        public List<SelectListItem> GetSupplierSelectListItems()
+        {
+            var dataList = _db.Suppliers.ToList();
 
-        //    var supplierSelectListItems = new List<SelectListItem>();
+            var supplierSelectListItems = new List<SelectListItem>();
 
-        //    supplierSelectListItems.AddRange(GetDefaultSelectListItem());
+            supplierSelectListItems.AddRange(GetDefaultSelectListItem());
 
-        //    if (dataList != null && dataList.Count > 0)
-        //    {
-        //        foreach (var supplier in dataList)
-        //        {
-        //            var selectListItem = new SelectListItem();
-        //            selectListItem.Text = supplier.Name;
-        //            selectListItem.Value = supplier.Id.ToString();
+            if (dataList != null && dataList.Count > 0)
+            {
+                foreach (var supplier in dataList)
+                {
+                    var selectListItem = new SelectListItem();
+                    selectListItem.Text = supplier.Name;
+                    selectListItem.Value = supplier.Id.ToString();
 
-        //            supplierSelectListItems.Add(selectListItem);
-        //        }
-        //    }
-        //    return supplierSelectListItems;
-        //}
+                    supplierSelectListItems.Add(selectListItem);
+                }
+            }
+            return supplierSelectListItems;
+        }
 
         //public List<SelectListItem> GetProductSelectListItems()
         //{
@@ -244,15 +248,15 @@ namespace SmallShopManagementSystem.Controllers
 
 
 
-        //public List<SelectListItem> GetDefaultSelectListItem()
-        //{
-        //    var dataList = new List<SelectListItem>();
-        //    var defaultSelectListItem = new SelectListItem();
-        //    defaultSelectListItem.Text = "---Select---";
-        //    defaultSelectListItem.Value = "";
-        //    dataList.Add(defaultSelectListItem);
-        //    return dataList;
-        //}
+        public List<SelectListItem> GetDefaultSelectListItem()
+        {
+            var dataList = new List<SelectListItem>();
+            var defaultSelectListItem = new SelectListItem();
+            defaultSelectListItem.Text = "---Select---";
+            defaultSelectListItem.Value = "";
+            dataList.Add(defaultSelectListItem);
+            return dataList;
+        }
         
 
 

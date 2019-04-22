@@ -49,9 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseContext\SSMSDbContext.cs" />
-    <Compile Include="Migrations\201904220619245_All.cs" />
-    <Compile Include="Migrations\201904220619245_All.Designer.cs">
-      <DependentUpon>201904220619245_All.cs</DependentUpon>
+    <Compile Include="Migrations\201904220747040_All.cs" />
+    <Compile Include="Migrations\201904220747040_All.Designer.cs">
+      <DependentUpon>201904220747040_All.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,10 +76,11 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201904220619245_All.resx">
-      <DependentUpon>201904220619245_All.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904220747040_All.resx">
+      <DependentUpon>201904220747040_All.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

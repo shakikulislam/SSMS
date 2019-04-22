@@ -16,6 +16,7 @@ namespace SSMS.Models.Models
         public string ContactPerson { get; set; }
         public byte[] Image { get; set; }
         public ICollection<Purchase> Purchases { get; set; }
+      
 
     }
 }

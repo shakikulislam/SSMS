@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 
 namespace SSMS.Models.Models
 {
@@ -47,6 +49,7 @@ namespace SSMS.Models.Models
         public double NewMrp { get; set; }
         //public int PurchaseId { get; set; }
         public virtual Purchase Purchase { get; set; }
+
 
     }
 }

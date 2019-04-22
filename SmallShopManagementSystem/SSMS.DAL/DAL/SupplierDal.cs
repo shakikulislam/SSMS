@@ -19,9 +19,11 @@ namespace SSMS.DAL.DAL
             return isSaved > 0 ? true : false;
             //return false;
         }
+      
+
         public Supplier GetSupplierById(int id)
         {
-            Supplier nSupplier = _db.Suppliers.Where(c => c.Id == id).FirstOrDefault();
+            Supplier nSupplier = _db.Suppliers.FirstOrDefault(c => c.Id == id);
             return nSupplier;
         }
 
@@ -59,12 +61,15 @@ namespace SSMS.DAL.DAL
             var supplier = _db.Suppliers.FirstOrDefault(c => c.Code == code);
             return supplier;
         }
-
-
-        public List<Supplier> Show(int index)
+        public List<Supplier> Show()
         {
             return _db.Suppliers.ToList();
         }
+
+        //public List<Supplier> Show(int index)
+        //{
+        //    return _db.Suppliers.ToList();
+        //}
 
         
     }
