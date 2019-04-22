@@ -23,7 +23,7 @@ function createRowForPurchase() {
     //For Serial No For UI
     var slTd = "<td id='Sl" + index + "'> " + (++sl) + " </td>";
 
-    var productCell = "<td> <input type='hidden' id='ProductName" + index + "'  name='PurchaseDetailses[" + index + "].Product.Name' value='" + selectedItem.ProductName + "' /> " + selectedItem.ProductName + " </td>";
+    var productCell = "<td> <input type='hidden' id='ProductName" + index + "'  name='PurchaseDetailses[" + index + "].Product' value='" + selectedItem.ProductName + "' /> " + selectedItem.ProductName + " </td>";
     var codeCell = "<td> <input type='hidden' id='ProductCode" + index + "'  name='PurchaseDetailses[" + index + "].Code' value='" + selectedItem.ProductCode + "' /> " + selectedItem.ProductCode + " </td>";
     var manufacturedDateCell = "<td> <input type='hidden' id='ProductManufacturedDate" + index + "'  name='PurchaseDetailses[" + index + "].ManufacturedDate' value='" + selectedItem.ProductManufacturedDate + "' /> " + selectedItem.ProductManufacturedDate + " </td>";
     var expireDateCell = "<td> <input type='hidden' id='ProductExpireDate" + index + "'  name='PurchaseDetailses[" + index + "].ExpireDate' value='" + selectedItem.ProductExpireDate + "' /> " + selectedItem.ProductExpireDate + " </td>";

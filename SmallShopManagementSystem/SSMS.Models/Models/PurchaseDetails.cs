@@ -15,8 +15,8 @@ namespace SSMS.Models.Models
         //public int SupplierId { get; set; }
 
         //[DisplayName("Products")]
-        public virtual Product Product { get; set; }
-        //public string Product { get; set; }
+        //public virtual Product Product { get; set; }
+        public string Product { get; set; }
         //public int ProductId { get; set; }
         public string Code { get; set; }
         //[DisplayName("Manufactured Date")]
