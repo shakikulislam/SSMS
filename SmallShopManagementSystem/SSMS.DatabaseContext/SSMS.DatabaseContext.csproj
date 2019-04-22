@@ -73,6 +73,14 @@
     <Compile Include="Migrations\201904180604196_Add_Product_dropdown_property.Designer.cs">
       <DependentUpon>201904180604196_Add_Product_dropdown_property.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904211701185_Add_Saledetails_and_Sale.cs" />
+    <Compile Include="Migrations\201904211701185_Add_Saledetails_and_Sale.Designer.cs">
+      <DependentUpon>201904211701185_Add_Saledetails_and_Sale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904211940238_Add_SaleVM.cs" />
+    <Compile Include="Migrations\201904211940238_Add_SaleVM.Designer.cs">
+      <DependentUpon>201904211940238_Add_SaleVM.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -104,6 +112,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904180604196_Add_Product_dropdown_property.resx">
       <DependentUpon>201904180604196_Add_Product_dropdown_property.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904211701185_Add_Saledetails_and_Sale.resx">
+      <DependentUpon>201904211701185_Add_Saledetails_and_Sale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904211940238_Add_SaleVM.resx">
+      <DependentUpon>201904211940238_Add_SaleVM.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

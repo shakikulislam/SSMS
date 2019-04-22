@@ -12,6 +12,9 @@ namespace SSMS.DatabaseContext.DatabaseContext
 
         public DbSet<Customer> Customers { get; set; }
 
+        public DbSet<Sale> Sales { get; set; }
+        public DbSet<SaleDetails> SaleDetails { get; set; }
+
 
     }
 }

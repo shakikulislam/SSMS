@@ -26,5 +26,7 @@ namespace SSMS.Models.Models
         [NotMapped]
         public List<SelectListItem> CategoryLookUp { get; set; }
 
+
+
     }
 }
