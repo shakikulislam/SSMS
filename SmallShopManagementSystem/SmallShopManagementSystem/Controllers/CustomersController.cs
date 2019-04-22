@@ -23,6 +23,7 @@ namespace SmallShopManagementSystem.Controllers
         {
             try
             {
+                
 
                 if (UploadImage != null)
                 {
@@ -82,6 +83,7 @@ namespace SmallShopManagementSystem.Controllers
                 {
                     ViewBag.FMsg = "Customer not found.";
                 }
+                
             }
             catch (Exception exception)
             {
@@ -90,9 +92,10 @@ namespace SmallShopManagementSystem.Controllers
             return View();
         }
 
-        public ActionResult Update()
+        public ActionResult Update(string code)
         {
-            return View();
+            var aCustomer = _customer.GetCustomerById(code);
+            return View(aCustomer);
 
         }
 
@@ -107,7 +110,9 @@ namespace SmallShopManagementSystem.Controllers
                     var isDelete = _customer.Delete(aCustomer);
                     if (isDelete)
                     {
+                        
                         ViewBag.SDeleted = "Delete Success.";
+                        //return RedirectToAction("Show");
                     }
                     else
                     {
