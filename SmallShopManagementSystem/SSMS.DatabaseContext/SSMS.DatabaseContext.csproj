@@ -53,6 +53,30 @@
     <Compile Include="Migrations\201904220747040_All.Designer.cs">
       <DependentUpon>201904220747040_All.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904221046219_Produduct_DropDown.cs" />
+    <Compile Include="Migrations\201904221046219_Produduct_DropDown.Designer.cs">
+      <DependentUpon>201904221046219_Produduct_DropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904221505473_New.cs" />
+    <Compile Include="Migrations\201904221505473_New.Designer.cs">
+      <DependentUpon>201904221505473_New.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904221509564_New1.cs" />
+    <Compile Include="Migrations\201904221509564_New1.Designer.cs">
+      <DependentUpon>201904221509564_New1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904221513103_New2.cs" />
+    <Compile Include="Migrations\201904221513103_New2.Designer.cs">
+      <DependentUpon>201904221513103_New2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904221515321_New3.cs" />
+    <Compile Include="Migrations\201904221515321_New3.Designer.cs">
+      <DependentUpon>201904221515321_New3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904221741267_drop.cs" />
+    <Compile Include="Migrations\201904221741267_drop.Designer.cs">
+      <DependentUpon>201904221741267_drop.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -78,6 +102,24 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201904220747040_All.resx">
       <DependentUpon>201904220747040_All.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904221046219_Produduct_DropDown.resx">
+      <DependentUpon>201904221046219_Produduct_DropDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904221505473_New.resx">
+      <DependentUpon>201904221505473_New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904221509564_New1.resx">
+      <DependentUpon>201904221509564_New1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904221513103_New2.resx">
+      <DependentUpon>201904221513103_New2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904221515321_New3.resx">
+      <DependentUpon>201904221515321_New3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904221741267_drop.resx">
+      <DependentUpon>201904221741267_drop.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

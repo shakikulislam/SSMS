@@ -34,9 +34,8 @@
                         @Html.LabelFor(m => m.Supplier, "Supplier *", new { @class = "control-label col-md-4" })
                         <div class="col-md-4">
                             @*@Html.DropDownListFor(m => m.SupplierId, Model.SupplierLookUp, new { @class = "form-control" })*@
-                            @Html.DropDownListFor(m => m.SupplierId, Model.SupplierLookUp ?? new List<SelectListItem>(), "-Please select-")
-
-
+                            @Html.DropDownListFor(m => m.SupplierId, Model.SupplierLookUp ?? new List<SelectListItem>(), new { @class = "form-control" })
+                            
                         </div>
 
                     </div>
@@ -56,18 +55,18 @@
                 </div>
                 <div class="panel-body">
                     <div class="form-group row">
-                        @Html.@Html.Label("ProductName", "Product *", new { @class = "control-label col-md-4" })
+                        @Html.@Html.Label("IdProduct", "Product *", new { @class = "control-label col-md-4" })
                         <div class="col-md-4">
-                            @Html.TextBox("ProductName", null, new { @class = "form-control" })
-                            @*@Html.DropDownListFor<>("m => m.ProductId", Model.ProductLookUp, new { @class = "form-control" })*@
+                            @Html.DropDownList("IdProduct", Model.ProductLookUp ?? new List<SelectListItem>(), new { @class = "form-control" })
+
 
                         </div>
 
                     </div>
                     <div class="form-group row">
-                        @Html.Label("ProductCode", "Code *", new { @class = "control-label col-md-4" })
+                        @Html.Label("ProductNoCode", "Code *", new { @class = "control-label col-md-4" })
                         <div class="col-md-4">
-                            @Html.TextBox("ProductCode", null, new { @class = "form-control" })
+                            @Html.TextBox("ProductNoCode", null, new {  @class = "form-control" , @readonly = "readonly" })
                         </div>
 
                     </div>
@@ -173,7 +172,7 @@
                                 <td>New CP</td>
                                 <td>New MRP</td>
                                 <td>Action</td>
-
+                                
                             </tr>
 
                         </thead>

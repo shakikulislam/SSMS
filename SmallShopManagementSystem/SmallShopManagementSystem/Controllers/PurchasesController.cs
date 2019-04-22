@@ -18,7 +18,10 @@ namespace SmallShopManagementSystem.Controllers
         {
             var model = new Purchase();
             model.SupplierLookUp = GetSupplierSelectListItems();
+            model.ProductLookUp = GetProductSelectListItems();
             return View(model);
+          
+          
         }
 
 
@@ -32,6 +35,7 @@ namespace SmallShopManagementSystem.Controllers
                 var model = new Purchase();
 
                 model.SupplierLookUp = GetSupplierSelectListItems();
+                model.ProductLookUp = GetProductSelectListItems();
 
                 _db.Purchases.Add(purchase);
                 var isPurchaseAdded = _db.SaveChanges();
@@ -224,27 +228,27 @@ namespace SmallShopManagementSystem.Controllers
             return supplierSelectListItems;
         }
 
-        //public List<SelectListItem> GetProductSelectListItems()
-        //{
-        //    var dataList = _db.Products.ToList();
+        public List<SelectListItem> GetProductSelectListItems()
+        {
+            var dataList = _db.Products.ToList();
 
-        //    var productSelectListItems = new List<SelectListItem>();
+            var productSelectListItems = new List<SelectListItem>();
 
-        //    productSelectListItems.AddRange(GetDefaultSelectListItem());
+            productSelectListItems.AddRange(GetDefaultSelectListItem());
 
-        //    if (dataList != null && dataList.Count > 0)
-        //    {
-        //        foreach (var product in dataList)
-        //        {
-        //            var selectListItem = new SelectListItem();
-        //            selectListItem.Text = product.Name;
-        //            selectListItem.Value = product.Id.ToString();
+            if (dataList != null && dataList.Count > 0)
+            {
+                foreach (var product in dataList)
+                {
+                    var selectListItem = new SelectListItem();
+                    selectListItem.Text = product.Name;
+                    selectListItem.Value = product.Id.ToString();
 
-        //            productSelectListItems.Add(selectListItem);
-        //        }
-        //    }
-        //    return productSelectListItems;
-        //}
+                    productSelectListItems.Add(selectListItem);
+                }
+            }
+            return productSelectListItems;
+        }
 
 
 
@@ -252,7 +256,7 @@ namespace SmallShopManagementSystem.Controllers
         {
             var dataList = new List<SelectListItem>();
             var defaultSelectListItem = new SelectListItem();
-            defaultSelectListItem.Text = "---Select---";
+            defaultSelectListItem.Text = "--------Select--------";
             defaultSelectListItem.Value = "";
             dataList.Add(defaultSelectListItem);
             return dataList;

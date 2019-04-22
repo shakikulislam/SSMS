@@ -25,14 +25,18 @@ namespace SSMS.Models.Models
         public virtual Supplier Supplier { get; set; }
         public int SupplierId { get; set; }
 
+        public virtual Product Product { get; set; }
+        public string ProductCode { get; set; }
+        //public int ProductId { get; set; }
+
         public virtual ICollection<PurchaseDetails> PurchaseDetailses { get; set; }
 
         [NotMapped]
         public List<SelectListItem> SupplierLookUp { get; set; }
 
 
-        //[NotMapped]
-        //public List<SelectListItem> ProductLookUp { get; set; }
+        [NotMapped]
+        public List<SelectListItem> ProductLookUp { get; set; }
 
         //public virtual List<PurchaseFile> PurchaseFiles { get; set; }
 

@@ -17,8 +17,8 @@ namespace SSMS.Models.Models
         //public int SupplierId { get; set; }
 
         //[DisplayName("Products")]
-        //public virtual Product Product { get; set; }
-        public string Product { get; set; }
+        public virtual Product Product { get; set; }
+        public string ProductCode { get; set; }
         //public int ProductId { get; set; }
         public string Code { get; set; }
         //[DisplayName("Manufactured Date")]
@@ -49,6 +49,9 @@ namespace SSMS.Models.Models
         public double NewMrp { get; set; }
         //public int PurchaseId { get; set; }
         public virtual Purchase Purchase { get; set; }
+
+        [NotMapped]
+        public List<SelectListItem> ProductLookUp { get; set; }
 
 
     }
