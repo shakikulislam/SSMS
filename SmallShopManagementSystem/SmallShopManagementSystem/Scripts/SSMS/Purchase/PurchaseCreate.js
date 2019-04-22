@@ -63,11 +63,13 @@ function getSelectedItem() {
     var productExpireDate = $("#ProductExpireDate").val();
     var productQuantity = $("#ProductQuantity").val();
     var productUnitPrice = $("#ProductUnitPrice").val();
-    var productTotalPrice = $("#ProductTotalPrice").val();
+    var productTotalPrice = productQuantity * productUnitPrice;
     var productPreviousCostPrice = $("#ProductPreviousCostPrice").val();
     var productPreviousMrp = $("#ProductPreviousMrp").val();
-    var productNewCostPrice = $("#ProductNewCostPrice").val();
-    var productNewMrp = $("#ProductNewMrp").val();
+    var productNewCostPrice = productUnitPrice;
+    //var productNewMrp = $("#ProductNewMrp").val();
+    var productNewMrp = (productUnitPrice / 100) * 25;
+
 
     var item = {
         "IdProduct": idProduct,
@@ -83,7 +85,10 @@ function getSelectedItem() {
         "ProductNewMrp": productNewMrp
 
 
+
     };
+
+
     //$("#ProductQuantity,#ProductUnitPrice").keyup(function () {
     //    $('#ProductTotalPrice').val($('#ProductQuantity').val() * $('#ProductUnitPrice').val());
     //});
@@ -96,6 +101,8 @@ function getSelectedItem() {
     //        $('#ProductTotalPrice').val(result || ''); //shows value in "#rate"
     //    })
     //});
+
+    
 
 
     return item;

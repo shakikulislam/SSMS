@@ -7,13 +7,13 @@ namespace SSMS.DatabaseContext.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class New3 : IMigrationMetadata
+    public sealed partial class Add_Purchase_and_All : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(New3));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Add_Purchase_and_All));
         
         string IMigrationMetadata.Id
         {
-            get { return "201904221515321_New3"; }
+            get { return "201904222338093_Add_Purchase_and_All"; }
         }
         
         string IMigrationMetadata.Source

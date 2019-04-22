@@ -20,17 +20,17 @@
 
         <table>
             <tr><td>@Html.LabelFor(c => c.Code)</td></tr>
-            <tr><td>@Html.TextBoxFor(c => c.Code)</td></tr>
+            <tr><td>@Html.TextBoxFor(c => c.Code, new { @class = "form-control" })</td></tr>
             <tr><td>@Html.LabelFor(c => c.Name)</td></tr>
-            <tr><td>@Html.TextBoxFor(c => c.Name)</td></tr>
+            <tr><td>@Html.TextBoxFor(c => c.Name, new { @class = "form-control" })</td></tr>
             <tr><td>@Html.LabelFor(c => c.Address)</td></tr>
-            <tr><td>@Html.TextBoxFor(c => c.Address)</td></tr>
+            <tr><td>@Html.TextBoxFor(c => c.Address, new { @class = "form-control" })</td></tr>
             <tr><td>@Html.LabelFor(c => c.Email)</td></tr>
-            <tr><td>@Html.TextBoxFor(c => c.Email)</td></tr>
+            <tr><td>@Html.TextBoxFor(c => c.Email, new { @class = "form-control" })</td></tr>
             <tr><td>@Html.LabelFor(c => c.Contact)</td></tr>
-            <tr><td>@Html.TextBoxFor(c => c.Contact)</td></tr>
+            <tr><td>@Html.TextBoxFor(c => c.Contact, new { @class = "form-control" })</td></tr>
             <tr><td>@Html.LabelFor(c => c.LoyalityPoint)</td></tr>
-            <tr><td>@Html.TextBoxFor(c => c.LoyalityPoint)</td></tr>
+            <tr><td>@Html.TextBoxFor(c => c.LoyalityPoint, new { @class = "form-control" })</td></tr>
             <tr><td><input type="file" name="UploadImage" id="imgInp" class="btn btn-primary" /></td></tr>
             <tr> <td>
     <img style="height:200px; width:220px" id="blah" src="#" alt="image" />

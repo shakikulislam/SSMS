@@ -161,41 +161,41 @@ namespace SmallShopManagementSystem.Controllers
         //}
 
 
-        //[HttpGet]
-        //public ActionResult Delete()
-        //{
-        //    return View();
-        //}
-        //[HttpPost]
-        //public ActionResult Delete(Purchase purchase)
-        //{
-        //    try
-        //    {
-        //        var aPurchase = _purchaseBll.GetPurchaseById(purchase.Id);
-        //        if (aPurchase != null)
-        //        {
-        //            var isDelete = _purchaseBll.Delete(aPurchase);
-        //            if (isDelete)
-        //            {
-        //                ViewBag.SDeleted = "Delete Success.";
-        //            }
-        //            else
-        //            {
-        //                ViewBag.NSDelete = "Delete Failed.";
-        //            }
-        //        }
-        //        else
-        //        {
-        //            ViewBag.FMsg = "Purchase not found.";
-        //        }
-        //    }
-        //    catch (Exception exception)
-        //    {
+        [HttpGet]
+        public ActionResult Delete()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Delete(Purchase purchase)
+        {
+            try
+            {
+                var aPurchase = _purchaseBll.GetPurchaseById(purchase.Id);
+                if (aPurchase != null)
+                {
+                    var isDelete = _purchaseBll.Delete(aPurchase);
+                    if (isDelete)
+                    {
+                        ViewBag.SDeleted = "Delete Success.";
+                    }
+                    else
+                    {
+                        ViewBag.NSDelete = "Delete Failed.";
+                    }
+                }
+                else
+                {
+                    ViewBag.FMsg = "Purchase not found.";
+                }
+            }
+            catch (Exception exception)
+            {
 
-        //        ViewBag.FMsg = exception.Message;
-        //    }
-        //    return View();
-        //}
+                ViewBag.FMsg = exception.Message;
+            }
+            return View();
+        }
 
         //private const int index = 1;
 
@@ -261,9 +261,8 @@ namespace SmallShopManagementSystem.Controllers
             dataList.Add(defaultSelectListItem);
             return dataList;
         }
-        
 
 
-
-	}
+      
+    }
 }
