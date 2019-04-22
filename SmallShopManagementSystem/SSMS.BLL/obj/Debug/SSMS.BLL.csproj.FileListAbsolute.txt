@@ -16,19 +16,3 @@ E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\S
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.BLL\obj\Debug\SSMS.BLL.csprojResolveAssemblyReference.cache
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.BLL\obj\Debug\SSMS.BLL.dll
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.BLL\obj\Debug\SSMS.BLL.pdb
-E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\SSMS.BLL.dll.config
-E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\SSMS.BLL.dll
-E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\SSMS.BLL.pdb
-E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\EntityFramework.dll
-E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\EntityFramework.SqlServer.dll
-E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\SSMS.DAL.dll
-E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\SSMS.Models.dll
-E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\SSMS.DatabaseContext.dll
-E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\SSMS.DAL.pdb
-E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\SSMS.Models.pdb
-E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\EntityFramework.xml
-E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\EntityFramework.SqlServer.xml
-E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.BLL\bin\Debug\SSMS.DatabaseContext.pdb
-E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.BLL\obj\Debug\SSMS.BLL.csprojResolveAssemblyReference.cache
-E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.BLL\obj\Debug\SSMS.BLL.dll
-E:\BITM\Project 2\MyBranch Touthid\V4\SSMS\SmallShopManagementSystem\SSMS.BLL\obj\Debug\SSMS.BLL.pdb

@@ -53,9 +53,6 @@ namespace SmallShopManagementSystem.Controllers
         [HttpPost]
         public ActionResult Update(Customer customer)
         {
-
-
-
             try
             {
                 var aCustomer = _customer.GetCustomerById(customer.Code);

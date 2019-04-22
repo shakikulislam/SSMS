@@ -160,6 +160,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Scripts\SSMS\Category\" />
+    <Folder Include="Scripts\SSMS\Product\" />
+    <Folder Include="Scripts\SSMS\Supplier\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SSMS.BLL\SSMS.BLL.csproj">

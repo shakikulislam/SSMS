@@ -49,9 +49,10 @@ namespace SmallShopManagementSystem.Controllers
         }
 
 
-        public ActionResult Update()
+        public ActionResult Update(string code)
         {
-            return View();
+            var aSupplier = _supplier.GetSupplierById(code);
+            return View(aSupplier);
         }
         [HttpPost]
         public ActionResult Update(Supplier supplier)
@@ -93,17 +94,12 @@ namespace SmallShopManagementSystem.Controllers
         }
 
 
-        [HttpGet]
-        public ActionResult Delete()
-        {
-            return View();
-        }
-        [HttpPost]
-        public ActionResult Delete(Supplier supplier)
+      
+        public ActionResult Delete(string code)
         {
             try
             {
-                var aSupplier = _supplier.GetSupplierById(supplier.Code);
+                var aSupplier = _supplier.GetSupplierById(code);
                 if (aSupplier != null)
                 {
                     var isDelete = _supplier.Delete(aSupplier);

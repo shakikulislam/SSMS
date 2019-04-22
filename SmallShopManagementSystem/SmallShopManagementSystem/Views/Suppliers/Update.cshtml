@@ -23,7 +23,7 @@
     }
     <table>
         <tr><td>@Html.LabelFor(c => c.Code)</td></tr>
-        <tr><td>@Html.TextBoxFor(c => c.Code)</td></tr>
+        <tr><td>@Html.TextBoxFor(c => c.Code, new { @readonly = "readonly" })</td></tr>
         <tr><td>@Html.LabelFor(c => c.Name)</td></tr>
         <tr><td>@Html.TextBoxFor(c => c.Name)</td></tr>
         <tr><td>@Html.LabelFor(c => c.Address)</td></tr>
