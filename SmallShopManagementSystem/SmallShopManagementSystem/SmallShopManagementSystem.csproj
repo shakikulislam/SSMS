@@ -108,6 +108,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\SSMS\Customer\CustomerDelete.js" />
     <Content Include="Scripts\SSMS\Customer\ShowImageUpload.js" />
+    <Content Include="Scripts\SSMS\Sale\AutoDropdown.js" />
     <Content Include="Scripts\SSMS\Sale\SaleCreate.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -116,6 +117,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
+    <Compile Include="Controllers\DropController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\SalesController.cs" />
@@ -147,6 +149,7 @@
     <Content Include="Views\Customers\Delete.cshtml" />
     <Content Include="Views\Customers\Show.cshtml" />
     <Content Include="Views\Sales\Create.cshtml" />
+    <Content Include="Views\Drop\Show.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

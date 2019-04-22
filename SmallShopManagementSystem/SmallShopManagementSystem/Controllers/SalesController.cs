@@ -19,15 +19,23 @@ namespace SmallShopManagementSystem.Controllers
         public ActionResult Create(Sale sale)
         {
 
-
             if (ModelState.IsValid && sale.PurchaseDetailses != null && sale.PurchaseDetailses.Count > 0)
             {
+                var customerList = _customer.Show();
+                ViewBag.Products = customerList;
+                //if (purchase.UploadFiles != null && purchase.UploadFiles[0] != null)
+                //{
+
+
+                //}
 
 
                 _db.Sales.Add(sale);
                 var isAdded = _db.SaveChanges() > 0;
                 if (isAdded)
                 {
+                    //var inPurchase = _db.Purchases.Where(c => c.Id == purchase.Id).FirstOrDefault();
+                    //purchase.PurchaseDetailses = inPurchase.PurchaseDetailses;
                     return View(sale);
                 }
             }
@@ -37,10 +45,9 @@ namespace SmallShopManagementSystem.Controllers
 
         public ActionResult Create()
         {
-            var model = new Customer();
-            model.CustomerLookUp = GetCustomerSelectListItems();
-            //model.SubDistrictLookUp = GetDefaultSelectListItem();
-            return View(model);
+            var customerList = _customer.Show();
+            ViewBag.Products = customerList;
+            return View();
         }
 
 
@@ -50,36 +57,5 @@ namespace SmallShopManagementSystem.Controllers
         //    return View(purchase);
         //}
 
-        public List<SelectListItem> GetCustomerSelectListItems()
-        {
-            var dataList = _db.Customers.ToList();
-
-            var customerSelectListItems = new List<SelectListItem>();
-
-            customerSelectListItems.AddRange(GetDefaultSelectListItem());
-
-            if (dataList != null && dataList.Count > 0)
-            {
-                foreach (var subDistrict in dataList)
-                {
-                    var selectListItem = new SelectListItem();
-                    selectListItem.Text = subDistrict.Name;
-                    selectListItem.Value = subDistrict.Id.ToString();
-
-                    customerSelectListItems.Add(selectListItem);
-                }
-            }
-            return customerSelectListItems;
-        }
-        public List<SelectListItem> GetDefaultSelectListItem()
-        {
-            var dataList = new List<SelectListItem>();
-            var defaultSelectListItem = new SelectListItem();
-            defaultSelectListItem.Text = "---Select---";
-            defaultSelectListItem.Value = "";
-            dataList.Add(defaultSelectListItem);
-            return dataList;
-        }
-
-	}
+    }
 }

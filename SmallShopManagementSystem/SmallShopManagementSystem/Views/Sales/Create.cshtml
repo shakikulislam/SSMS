@@ -15,22 +15,53 @@
                 <div class="panel-body">
 
                     <div class="form-group row">
-                        @Html.LabelFor(c => c.CustomerName, "Customer Name *", new { @class = "control-label col-md-4" })
+                        @Html.LabelFor(c => c.CustomerName, "Customer Name *", new {@class = "control-label col-md-4"})
                         <div class="col-md-4">
-                            @Html.TextBoxFor(c => c.CustomerName, null, new { @class = "form-control" })
+                            <select name="CustomerName" id="CustomerName" class="control-label col-md-4">
+                                @{
+
+                                    <option  selected>--Select--</option>
+
+                                    foreach (var product in ViewBag.Products)
+                                    {
+                                        <option value="@product.Name"
+                                                            
+                                                data-desc="@product.LoyalityPoint">
+                                            @product.Name
+                                        </option>
+                                    }
+                                }
+                            </select>
+
+                        </div>
+                        @*<tr><td>@Html.DropDownListFor(c => c.CategoryId, Model.CategoryLookUp, new { @class = "form-control" })</td></tr>*@
+
+                        @*@Html.DropDownList("drpProducts",
+             new SelectList(Enum.GetValues(product.Id)),
+                            "---Select---",
+                            new { @class = "form-control" ,})*@
+
+                        <div class="col-md-4">
+                           
                         </div>
                     </div>
 
                     <div class="form-group row">
                         @Html.LabelFor(c => c.Date, "Date *", new { @class = "control-label col-md-4" })
                         <div class="col-md-4">
-                            @Html.TextBoxFor(c => c.Date, null, new { @class = "form-control" })
-                        </div>
+                            
+                            
+                           @Html.TextBoxFor(c => c.Date, null, new { @class = "form-control" })
+                          
+                           
+                          
+                        
+                            </div>
                     </div>
                     <div class="form-group row">
                         @Html.LabelFor(c => c.LoyalityPoint, "Loyality Point *", new { @class = "control-label col-md-4" })
                         <div class="col-md-4">
-                            @Html.TextBoxFor(c => c.LoyalityPoint, null, new { @class = "form-control" })
+                            @Html.TextBoxFor(c => c.LoyalityPoint, null, new { @class = "form-control", id = "txtProductDescription" })
                         </div>
                     </div>
 
@@ -156,12 +187,17 @@
     </div>
 }
 
+<script src="~/Scripts/jquery-3.0.0.min.js"></script>
 @section scripts
 {
     
 <script src="~/Scripts/SSMS/Sale/SaleCreate.js"></script>
 
 }
+
+<script src="~/Scripts/SSMS/Sale/AutoDropdown.js"></script>
+
+
 
 
 
