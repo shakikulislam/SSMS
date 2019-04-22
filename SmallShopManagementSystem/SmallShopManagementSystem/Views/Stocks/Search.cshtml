@@ -1,0 +1,167 @@
+﻿
+@model IEnumerable<SSMS.Models.Models.Stock>
+
+@{
+    ViewBag.Title = "Search";
+}
+
+@using (Html.BeginForm("Search", "Stocks", FormMethod.Get))
+{
+    <div class="panel-group">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <div class="panel-title">Query</div>
+            </div>
+            <div class="panel-body">
+                <form method="POST">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                @Html.Label("Product", "Product", new { @class = "control-label col-md-4" })
+                                <div class="col-md-4">
+                                    @Html.TextBox("name", null, new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                @Html.Label("Category", "Category", new { @class = "control-label col-md-4" })
+                                <div class="col-md-4">
+                                    @Html.TextBox("Category", null, new { @class = "form-control" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                @Html.Label("StartDate", "Start Date", new { @class = "control-label col-md-4" })
+                                <div class="col-md-4">
+                                    @Html.TextBox("StartDate", null, new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                @Html.Label("EndDate", "End Date", new { @class = "control-label col-md-4" })
+                                <div class="col-md-4">
+                                    @Html.TextBox("EndDate", null, new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <input type="button" name="SearchButton" value="Search" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            <div class="panel-title">Details</div>
+        </div>
+        <div class="panel-body">
+            <table class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                    <td>Sl</td>
+                    <td>Code</td>
+                    <td>Name</td>
+                    <td>Category</td>
+                    <td>Reorder Level</td>
+                    <td>Recent Expire Date</td>
+                    <td>Opening Balance</td>
+                    <td>In</td>
+                    <td>Out</td>
+                    <td>Closing Balance</td>
+                </tr>
+                </thead>
+
+                <tbody id="StockDetailsTable">
+
+                @foreach (var item in Model)
+                {
+                    <tr>@Html.DisplayFor(c => item.product.Name)</tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
+@*<div class="form-group">
+    <div class="panel-group">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <div class="panel-title">Query</div>
+            </div>
+            <div class="panel-body">
+                <form method="POST">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                @Html.Label("Product", "Product", new { @class = "control-label col-md-4" })
+                                <div class="col-md-4">
+                                    @Html.TextBox("Name", null, new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                @Html.Label("Category", "Category", new { @class = "control-label col-md-4" })
+                                <div class="col-md-4">
+                                    @Html.TextBox("Category", null, new { @class = "form-control" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                @Html.Label("StartDate", "Start Date", new { @class = "control-label col-md-4" })
+                                <div class="col-md-4">
+                                    @Html.TextBox("StartDate", null, new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                @Html.Label("EndDate", "End Date", new { @class = "control-label col-md-4" })
+                                <div class="col-md-4">
+                                    @Html.TextBox("EndDate", null, new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <input type="button" name="SearchButton" value="Search" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            <div class="panel-title">Details</div>
+        </div>
+        <div class="panel-body">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <td>Sl</td>
+                        <td>Code</td>
+                        <td>Name</td>
+                        <td>Category</td>
+                        <td>Reorder Level</td>
+                        <td>Recent Expire Date</td>
+                        <td>Opening Balance</td>
+                        <td>In</td>
+                        <td>Out</td>
+                        <td>Closing Balance</td>
+                    </tr>
+                </thead>
+                <tbody id="StockDetailsTable"></tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+</div>*@
+
+@section Scripts
+{
+    <script src="~/Scripts/SSMS/Stock/SearchStock.js"></script>
+}

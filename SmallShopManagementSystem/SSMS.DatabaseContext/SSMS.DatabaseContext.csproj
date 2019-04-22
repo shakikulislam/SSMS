@@ -89,6 +89,10 @@
     <Compile Include="Migrations\201904220706031_SellVm.Designer.cs">
       <DependentUpon>201904220706031_SellVm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904220920217_Stock_Model.cs" />
+    <Compile Include="Migrations\201904220920217_Stock_Model.Designer.cs">
+      <DependentUpon>201904220920217_Stock_Model.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -132,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904220706031_SellVm.resx">
       <DependentUpon>201904220706031_SellVm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904220920217_Stock_Model.resx">
+      <DependentUpon>201904220920217_Stock_Model.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

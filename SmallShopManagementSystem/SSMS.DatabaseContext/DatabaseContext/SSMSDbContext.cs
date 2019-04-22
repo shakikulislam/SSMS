@@ -18,6 +18,7 @@ namespace SSMS.DatabaseContext.DatabaseContext
         public DbSet<SaleDetails> SaleDetails { get; set; }
 
         public DbSet<SaleVM> SaleVms { get; set; }
+        public DbSet<Stock> Stocks { get; set; }
 
 
     }

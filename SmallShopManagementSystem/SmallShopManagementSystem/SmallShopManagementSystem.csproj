@@ -107,6 +107,7 @@
     <Content Include="Scripts\SSMS\Customer\ShowImageUpload.js" />
     <Content Include="Scripts\SSMS\Purchase\PurchaseCreate.js" />
     <Content Include="Scripts\SSMS\Sale\SaleCreate.js" />
+    <Content Include="Scripts\SSMS\Stock\SearchStock.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -118,6 +119,7 @@
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\PurchasesController.cs" />
     <Compile Include="Controllers\SalesController.cs" />
+    <Compile Include="Controllers\StocksController.cs" />
     <Compile Include="Controllers\SuppliersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -151,6 +153,7 @@
     <Content Include="Views\Purchases\Delete.cshtml" />
     <Content Include="Views\Shared\Categori\_CategoriViewPv.cshtml" />
     <Content Include="Views\Sales\Create.cshtml" />
+    <Content Include="Views\Stocks\Search.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

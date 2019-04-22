@@ -18,8 +18,9 @@ E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Add_Product_dropdown_property.resources
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Add_Purchase_Model.resources
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Update_PurchaseDetails.resources
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Sell.resources
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.SellVm.resources
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.csproj.GenerateResource.Cache
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.dll
 E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.pdb
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Sell.resources
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.SellVm.resources
+E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DatabaseContext\obj\Debug\SSMS.DatabaseContext.Migrations.Stock_Model.resources
