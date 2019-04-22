@@ -39,16 +39,20 @@ function createRowForPurchase() {
     $("#AvailableQuantity").val("");
     $("#Qty").val("");
     $("#UnitPrice").val("");
+    
+    document.getElementById("grandTotal").innerHTML = grandTotal;
+
 
 }
 
-
+var grandTotal=0;
 function getSelectedItem() {
     var productName = $("#ProductName").val();
     var availableQuantity = $("#AvailableQuantity").val();
     var quantity = $("#Qty").val();
     var unitPrice = $("#UnitPrice").val();
     var totalPrice = quantity * unitPrice;
+     grandTotal = grandTotal + totalPrice;
     var item = {
         "ProductName": productName,
         "AvailableQuantity": availableQuantity,
