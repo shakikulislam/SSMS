@@ -7,13 +7,13 @@ namespace SSMS.DatabaseContext.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class Customer_Add : IMigrationMetadata
+    public sealed partial class Allinfo : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Customer_Add));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Allinfo));
         
         string IMigrationMetadata.Id
         {
-            get { return "201904160737227_Customer_Add"; }
+            get { return "201904211010107_All info"; }
         }
         
         string IMigrationMetadata.Source

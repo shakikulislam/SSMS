@@ -1,7 +1,209 @@
 ﻿@model SSMS.Models.Models.Purchase
 
+
+
+    @using (Html.BeginForm("Add", "Purchases", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+
+
+        <div class="panel-group">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <div class="panel-title">Purchase Header</div>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group row">
+                        @Html.LabelFor(m => m.Date, "Date *", new { @class = "control-label col-md-4" })
+                        <div class="col-md-4">
+                            @Html.TextBoxFor(m => m.Date, null, new { @class = "form-control" })
+                        </div>
+
+                    </div>
+                    <div class="form-group row">
+                        @Html.LabelFor(m => m.Bill, "Bill *", new { @class = "control-label col-md-4" })
+                        <div class="col-md-4">
+                            @Html.TextBoxFor(m => m.Bill, null, new { @class = "form-control" })
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="panel-group">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <div class="panel-title">Added Purchase Details Items</div>
+                </div>
+                <div class="panel-body">
+                </div>
+                <div class="panel-body">
+                    <div class="form-group row">
+                        @Html.@Html.Label("ProductName", "Product *", new { @class = "control-label col-md-4" })
+                        <div class="col-md-4">
+                            @Html.TextBox("ProductName", null, new { @class = "form-control" })
+                            @*@Html.DropDownListFor<>("m => m.ProductId", Model.ProductLookUp, new { @class = "form-control" })*@
+
+                        </div>
+
+                    </div>
+                    <div class="form-group row">
+                        @Html.Label("ProductCode", "Code *", new { @class = "control-label col-md-4" })
+                        <div class="col-md-4">
+                            @Html.TextBox("ProductCode", null, new { @class = "form-control" })
+                        </div>
+
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group row">
+                        @Html.Label("ProductManufacturedDate", "Manufactured Date *", new { @class = "control-label col-md-4" })
+                        <div class="col-md-4">
+                            @Html.TextBox("ProductManufacturedDate", null, new { @class = "form-control" })
+                        </div>
+
+                    </div>
+                    <div class="form-group row">
+                        @Html.Label("ProductExpireDate", "ExpireDate *", new { @class = "control-label col-md-4" })
+                        <div class="col-md-4">
+                            @Html.TextBox("ProductExpireDate", null, new { @class = "form-control" })
+                        </div>
+
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group row">
+                        @Html.Label("ProductQuantity", "Quantity *", new { @class = "control-label col-md-4" })
+                        <div class="col-md-4">
+                            @Html.TextBox("ProductQuantity", null, new { @class = "form-control" })
+                        </div>
+
+                    </div>
+                    <div class="form-group row">
+                        @Html.Label("ProductUnitPrice", "UnitPrice *", new { @class = "control-label col-md-4" })
+                        <div class="col-md-4">
+                            @Html.TextBox("ProductUnitPrice", null, new { @class = "form-control" })
+                        </div>
+
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group row">
+                        @Html.Label("ProductTotalPrice", "TotalPrice *", new { @class = "control-label col-md-4" })
+                        <div class="col-md-4">
+                            @Html.TextBox("ProductTotalPrice", null, new { @class = "form-control" })
+                        </div>
+
+                    </div>
+                    <div class="form-group row">
+                        @Html.Label("ProductPreviousCostPrice", "PreviousCostPrice *", new { @class = "control-label col-md-4" })
+                        <div class="col-md-4">
+                            @Html.TextBox("ProductPreviousCostPrice", null, new { @class = "form-control" })
+                        </div>
+
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group row">
+                        @Html.Label("ProductPreviousMrp", "PreviousMrp *", new { @class = "control-label col-md-4" })
+                        <div class="col-md-4">
+                            @Html.TextBox("ProductPreviousMrp", null, new { @class = "form-control" })
+                        </div>
+
+                    </div>
+                    <div class="form-group row">
+                        @Html.Label("ProductNewCostPrice", "NewCostPrice *", new { @class = "control-label col-md-4" })
+                        <div class="col-md-4">
+                            @Html.TextBox("ProductNewCostPrice", null, new { @class = "form-control" })
+                        </div>
+
+                    </div>
+                    <div class="form-group row">
+                        @Html.Label("ProductNewMrp", "NewMrp *", new { @class = "control-label col-md-4" })
+                        <div class="col-md-4">
+                            @Html.TextBox("ProductNewMrp", null, new { @class = "form-control" })
+                        </div>
+                        <div class="col-md-4 col-md-offset-4">
+                            <input type="button" id="AddButton" class="btn btn-success" value="Add" />
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="panel-group">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <div class="panel-title">Purchase Details</div>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-bordered table-hover table-striped table-responsive">
+                        <thead>
+
+                            <tr>
+                                <td>SL</td>
+                                <td>Products(Code)</td>
+                                <td>Manufactured Date</td>
+                                <td>Expire Date</td>
+                                <td>Purchased Quantity</td>
+                                <td>Unit Price</td>
+                                <td>Total Price</td>
+                                <td>Previous CP</td>
+                                <td>Previous MRP</td>
+                                <td>New CP</td>
+                                <td>New MRP</td>
+                                <td>Action</td>
+
+                            </tr>
+
+                        </thead>
+                        <tbody id="PurchaseDetailsTable"></tbody>
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    @*<input type="file" name="UploadFiles" class="btn btn-primary" multiple /><br />*@
+
+    <hr />
+    <div class="col-md-4 col-md-offset-4">
+        <input type="submit" class="btn btn-success" value="Save" />
+    </div>
+}
+
+@section scripts
+{
+  
+<script src="~/Scripts/SSMS/Purchase/PurchaseCreate.js"></script>
+
+}
+
+
+
+
+
            
-@{
+@*@{
     ViewBag.Title = "Add";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -63,7 +265,7 @@
     </table>
     
   
-</form>
+</form>*@
 
 
 

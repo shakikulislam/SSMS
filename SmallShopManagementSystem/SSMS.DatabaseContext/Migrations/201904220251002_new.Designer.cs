@@ -7,13 +7,13 @@ namespace SSMS.DatabaseContext.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class Add_Product_dropdown_property : IMigrationMetadata
+    public sealed partial class _new : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Add_Product_dropdown_property));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(_new));
         
         string IMigrationMetadata.Id
         {
-            get { return "201904180604196_Add_Product_dropdown_property"; }
+            get { return "201904220251002_new"; }
         }
         
         string IMigrationMetadata.Source
