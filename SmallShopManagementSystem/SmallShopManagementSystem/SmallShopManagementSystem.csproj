@@ -94,18 +94,10 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\Category\Add.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
     <Content Include="Scripts\jquery-3.0.0.slim.js" />
     <Content Include="Scripts\jquery-3.0.0.slim.min.js" />
-    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="Scripts\jquery-3.3.1.js" />
-    <Content Include="Scripts\jquery-3.3.1.min.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.3.1.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
@@ -114,6 +106,7 @@
     <Content Include="Scripts\SSMS\Customer\CustomerDelete.js" />
     <Content Include="Scripts\SSMS\Customer\ShowImageUpload.js" />
     <Content Include="Scripts\SSMS\Purchase\PurchaseCreate.js" />
+    <Content Include="Scripts\SSMS\Sale\SaleCreate.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -124,6 +117,7 @@
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\PurchasesController.cs" />
+    <Compile Include="Controllers\SalesController.cs" />
     <Compile Include="Controllers\SuppliersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -156,6 +150,7 @@
     <Content Include="Views\Purchases\Show.cshtml" />
     <Content Include="Views\Purchases\Delete.cshtml" />
     <Content Include="Views\Shared\Categori\_CategoriViewPv.cshtml" />
+    <Content Include="Views\Sales\Create.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

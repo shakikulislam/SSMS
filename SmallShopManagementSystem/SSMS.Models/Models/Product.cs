@@ -27,5 +27,7 @@ namespace SSMS.Models.Models
         public List<SelectListItem> CategoryLookUp { get; set; }
         public ICollection<Purchase> Purchases { get; set; }
 
+
+
     }
 }

@@ -81,6 +81,14 @@
     <Compile Include="Migrations\201904220402456_Update_PurchaseDetails.Designer.cs">
       <DependentUpon>201904220402456_Update_PurchaseDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904220702065_Sell.cs" />
+    <Compile Include="Migrations\201904220702065_Sell.Designer.cs">
+      <DependentUpon>201904220702065_Sell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904220706031_SellVm.cs" />
+    <Compile Include="Migrations\201904220706031_SellVm.Designer.cs">
+      <DependentUpon>201904220706031_SellVm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -93,15 +101,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="Scripts\jquery-3.3.1.min.map" />
-    <None Include="Scripts\jquery-3.3.1.slim.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="Scripts\jquery-3.3.1.js" />
-    <Content Include="Scripts\jquery-3.3.1.min.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201904091641536_Supplier_Model.resx">
@@ -127,6 +126,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904220402456_Update_PurchaseDetails.resx">
       <DependentUpon>201904220402456_Update_PurchaseDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904220702065_Sell.resx">
+      <DependentUpon>201904220702065_Sell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904220706031_SellVm.resx">
+      <DependentUpon>201904220706031_SellVm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

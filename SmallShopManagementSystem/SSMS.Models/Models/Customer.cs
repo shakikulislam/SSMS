@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,8 @@ namespace SSMS.Models.Models
         public string Email { get; set; }
         public string Contact { get; set; }
 
+        
+
         [DisplayName("Loyality Point")]
         public string LoyalityPoint { get; set; }
         public byte[] Image { get; set; }
@@ -23,5 +26,8 @@ namespace SSMS.Models.Models
         {
             throw new NotImplementedException();
         }
+
+        [NotMapped]
+        public List<System.Web.Mvc.SelectListItem> CustomerLookUp { get; set; }
     }
 }
