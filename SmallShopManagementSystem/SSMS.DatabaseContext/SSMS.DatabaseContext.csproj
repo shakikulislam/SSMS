@@ -49,9 +49,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseContext\SSMSDbContext.cs" />
-    <Compile Include="Migrations\201904222338093_Add_Purchase_and_All.cs" />
-    <Compile Include="Migrations\201904222338093_Add_Purchase_and_All.Designer.cs">
-      <DependentUpon>201904222338093_Add_Purchase_and_All.cs</DependentUpon>
+    <Compile Include="Migrations\201904230328026_All.cs" />
+    <Compile Include="Migrations\201904230328026_All.Designer.cs">
+      <DependentUpon>201904230328026_All.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904230330274_All1.cs" />
+    <Compile Include="Migrations\201904230330274_All1.Designer.cs">
+      <DependentUpon>201904230330274_All1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -67,8 +71,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201904222338093_Add_Purchase_and_All.resx">
-      <DependentUpon>201904222338093_Add_Purchase_and_All.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904230328026_All.resx">
+      <DependentUpon>201904230328026_All.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904230330274_All1.resx">
+      <DependentUpon>201904230330274_All1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
