@@ -35,10 +35,8 @@
                         <td>@aCategory.Code</td>
                         <td>@aCategory.Name</td>
                         <td>
-                            @Html.ActionLink("Edit,", "Update", "Categories", new { code = aCategory.Code }, new { @target = "_blank" })
-                            @Html.ActionLink("Delete", "Delete", "Categories", new { code = aCategory.Code }, new { @target = "_blank" })
-
-
+                            @Ajax.ActionLink("Edit,", "Update", "Categories", new { code = aCategory.Code }, new AjaxOptions { HttpMethod = "POST", Confirm = "Are you sure ?", UpdateTargetId = "TheDivToUpdate" }, null)
+                            @Ajax.ActionLink("Delete", "Delete", "Categories", new { code = aCategory.Code }, new AjaxOptions { HttpMethod = "POST", Confirm = "Are you sure ?", UpdateTargetId = "TheDivToUpdate" }, null)
 
 
                         </td>

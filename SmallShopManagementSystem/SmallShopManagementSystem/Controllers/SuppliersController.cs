@@ -45,6 +45,7 @@ namespace SmallShopManagementSystem.Controllers
             {
                 ViewBag.FMsg = exception.Message;
             }
+            ModelState.Clear();
             return View();
         }
 
@@ -90,6 +91,7 @@ namespace SmallShopManagementSystem.Controllers
             {
                 ViewBag.FMsg = exception.Message;
             }
+            
             return View();
         }
 
@@ -125,13 +127,20 @@ namespace SmallShopManagementSystem.Controllers
             return View();
         }
 
-        private const int index = 1;
+        //private const int index = 1;
 
 
-        public ActionResult Show(Supplier supplier)
+        //public ActionResult Show(Supplier supplier)
+        //{
+        //    List<Supplier> aSupplier = _supplier.Show(index);
+        //    return View(aSupplier);
+
+        //}
+
+        public ActionResult Show()
         {
-            List<Supplier> aSupplier = _supplier.Show(index);
-            return View(aSupplier);
+            var dataList = _supplier.Show();
+            return View(dataList);
 
         }
 	}

@@ -45,6 +45,7 @@ namespace SmallShopManagementSystem.Controllers
             {
                 ViewBag.FMsg = exception.Message;
             }
+            ModelState.Clear();
             return View();
         }
 
@@ -86,6 +87,7 @@ namespace SmallShopManagementSystem.Controllers
             {
                 ViewBag.FMsg = exception.Message;
             }
+            
             return View();
         }
 

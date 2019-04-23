@@ -28,11 +28,21 @@ namespace SSMS.BLL.BLL
             bool isDelete = _supplier.Delete(supplier);
             return isDelete;
         }
-
-        public List<Supplier> Show(int index)
+        public List<Supplier> Show()
         {
-            return _supplier.Show(index);
-
+            var model = new List<Supplier>();
+            model = _supplier.Show();
+            return model;
         }
+
+      
+
+        //public List<Supplier> Show(int index)
+        //{
+        //    return _supplier.Show(index);
+
+
+
+        //}
     }
 }

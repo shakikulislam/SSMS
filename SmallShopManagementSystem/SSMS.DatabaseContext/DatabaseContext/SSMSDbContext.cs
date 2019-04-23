@@ -1,9 +1,14 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using SSMS.Models.Models;
 
 namespace SSMS.DatabaseContext.DatabaseContext
 {
-    public class SSMSDbContext : DbContext
+    public class SSMSDbContext: DbContext
     {
         public DbSet<Supplier> Suppliers { get; set; }
 
@@ -21,5 +26,6 @@ namespace SSMS.DatabaseContext.DatabaseContext
         public DbSet<Stock> Stocks { get; set; }
 
 
+        //public DbSet<PurchaseDetails> Purchase { get; set; } 
     }
 }

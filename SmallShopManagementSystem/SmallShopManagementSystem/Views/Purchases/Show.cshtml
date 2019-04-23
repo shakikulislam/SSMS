@@ -1,6 +1,6 @@
-﻿@*@*@@**@model @*System.Collections.Generic.List<SSMS.Models.Models.Purchase>*@*@*@
+﻿@model System.Collections.Generic.List<SSMS.Models.Models.Purchase>
 
-@*<style>
+<style>
     table {
         border-collapse: collapse;
     }
@@ -12,7 +12,7 @@
 <h1> Purchase Details </h1>
 @*<p id="HeadTitle"> Purchase Details </p>*@
 
-@*@if (Model != null && Model.Count >= 0)
+@if (Model != null && Model.Count >= 0)
 {
     var sl = 0;
     <table style="width: 80%">
@@ -36,7 +36,7 @@
         {
             <tr>*@
 
-                @*<td>@(++sl)</td>
+                <td>@(++sl)</td>
                 <td>@aPurchase.Product.Name
                     @aPurchase.Product.Code</td>
                 <td>@aPurchase.ManufacturedDate</td>
@@ -58,5 +58,5 @@
         }
 
     </table>
-}*@*@*@
+}
 

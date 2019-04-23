@@ -33,9 +33,9 @@ namespace SSMS.BLL.BLL
             return isDelete;
         }
 
-        public List<Purchase> Show(int index)
+        public List<Purchase> Show()
         {
-            return _purchaseRepository.Show(index);
+            return _purchaseRepository.Show();
 
         }
     }

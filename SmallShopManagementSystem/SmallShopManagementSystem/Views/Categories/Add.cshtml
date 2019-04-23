@@ -10,7 +10,7 @@
 }
 
 
-<form method="POST">
+<form  method="POST">
     <h1>Category</h1>
     @if (ViewBag.SMsg != null)
     {
@@ -22,12 +22,13 @@
     }
     <table>
         <tr><td>@Html.LabelFor(c => c.Code)</td></tr>
-        <tr><td>@Html.TextBoxFor(c => c.Code)</td></tr>
+        <tr><td>@Html.TextBoxFor(c => c.Code , new { @class = "form-control" })</td></tr>
         <tr><td>@Html.LabelFor(c => c.Name)</td></tr>
-        <tr><td>@Html.TextBoxFor(c => c.Name)</td></tr>
+        <tr><td>@Html.TextBoxFor(c => c.Name, new { @class = "form-control" })</td></tr>
 
 
-        <tr><td><input type="submit" id="ShowPv" value="Add" /></td></tr>
+
+        @*<tr><td><input type="submit" id="ShowPv" value="Add" /></td></tr>*@
         
         
 
@@ -35,6 +36,11 @@
     </table>
 
     <p> @Html.ActionLink("Show", "Show", "Categories", new {@target = "_blank"})</p>
+
+
+        <tr><td><input type="submit" value="Add" /></td></tr>
+
+       
 
 
 

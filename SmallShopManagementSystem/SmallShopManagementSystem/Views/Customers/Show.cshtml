@@ -69,9 +69,17 @@
                             }
                         </td>
                         <td>
+<<<<<<< HEAD
                             @Html.ActionLink("Delete", "Delete", "Customers", new {Code = acustomer.Code}, new {@target = "_blank"})
                             @Html.ActionLink("Edit", "update", "Customers", new { Code = acustomer.Code }, new { @target = "_blank" })
 
+=======
+                            @Ajax.ActionLink("Edit,", "update", "Customers", new { Code = acustomer.Code }, new AjaxOptions { HttpMethod = "POST", Confirm = "Are you sure ?", UpdateTargetId = "TheDivToUpdate" }, null)
+                            @Ajax.ActionLink("Delete", "Delete", "Customers", new { Code = acustomer.Code }, new AjaxOptions { HttpMethod = "POST", Confirm = "Are you sure ?", UpdateTargetId = "TheDivToUpdate" }, null)
+
+
+                         
+>>>>>>> b0832e4f22acaf3ad881443f8079f270b81c02c6
                         </td>
 
 

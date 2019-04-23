@@ -1,52 +1,56 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 
 namespace SSMS.Models.Models
 {
     public class PurchaseDetails
     {
         public int Id { get; set; }
-        //public virtual Supplier Supplier { get; set; }
-
-        //public int SupplierId { get; set; }
-
-        //[DisplayName("Products")]
+       
         public virtual Product Product { get; set; }
-        //public string Product { get; set; }
+        public string ProductCode { get; set; }
         //public int ProductId { get; set; }
         public string Code { get; set; }
-        //[DisplayName("Manufactured Date")]
+        [DisplayName("Manufactured Date")]
         public DateTime ManufacturedDate { get; set; }
 
-        //[DisplayName("Expire Date")]
+        [DisplayName("Expire Date")]
         public DateTime ExpireDate { get; set; }
 
-        //[DisplayName("Purchased Quantity")]
+        [Required]
+        [DisplayName("Purchased Quantity")]
         public int Quantity { get; set; }
-
-        //[DisplayName("Unit Price")]
+        [Required]
+        [DisplayName("Unit Price")]
         public double UnitPrice { get; set; }
 
-        //[DisplayName("Total Price")]
+        [DisplayName("Total Price")]
         public double TotalPrice { get; set; }
 
-        //[DisplayName("Previous Cost Price")]
+        [DisplayName("Previous Cost Price")]
         public double PreviousCostPrice { get; set; }
 
-        //[DisplayName("Previous MRP")]
+        [DisplayName("Previous MRP")]
         public double PreviousMrp { get; set; }
 
-        //[DisplayName("New Cost Price")]
+        [DisplayName("New Cost Price")]
         public double NewCostPrice { get; set; }
 
-        //[DisplayName("New MRP")]
+        [DisplayName("New MRP")]
         public double NewMrp { get; set; }
         //public int PurchaseId { get; set; }
         public virtual Purchase Purchase { get; set; }
+
+        [NotMapped]
+        public List<SelectListItem> ProductLookUp { get; set; }
+
 
     }
 }

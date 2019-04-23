@@ -1,30 +1,30 @@
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SmallShopManagementSystem.dll.config
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SmallShopManagementSystem.dll
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SmallShopManagementSystem.pdb
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\EntityFramework.dll
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\EntityFramework.SqlServer.dll
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.BLL.dll
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.DatabaseContext.dll
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.Models.dll
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Helpers.dll
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Mvc.dll
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Razor.dll
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Webpages.Deployment.dll
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Webpages.dll
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Webpages.Razor.dll
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.DAL.dll
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.BLL.pdb
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.DatabaseContext.pdb
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.Models.pdb
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\EntityFramework.xml
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\EntityFramework.SqlServer.xml
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Razor.xml
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Webpages.xml
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Webpages.Deployment.xml
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Webpages.Razor.xml
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Helpers.xml
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Mvc.xml
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.DAL.pdb
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\obj\Debug\SmallShopManagementSystem.csprojResolveAssemblyReference.cache
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\obj\Debug\SmallShopManagementSystem.dll
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\obj\Debug\SmallShopManagementSystem.pdb
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SmallShopManagementSystem.dll.config
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SmallShopManagementSystem.dll
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SmallShopManagementSystem.pdb
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\EntityFramework.dll
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\EntityFramework.SqlServer.dll
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.BLL.dll
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.DatabaseContext.dll
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.Models.dll
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Helpers.dll
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Mvc.dll
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Razor.dll
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Webpages.Deployment.dll
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Webpages.dll
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Webpages.Razor.dll
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.DAL.dll
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.BLL.pdb
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.DatabaseContext.pdb
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.Models.pdb
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\EntityFramework.xml
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\EntityFramework.SqlServer.xml
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Razor.xml
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Webpages.xml
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Webpages.Deployment.xml
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Webpages.Razor.xml
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Helpers.xml
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\System.Web.Mvc.xml
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\bin\SSMS.DAL.pdb
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\obj\Debug\SmallShopManagementSystem.csprojResolveAssemblyReference.cache
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\obj\Debug\SmallShopManagementSystem.dll
+E:\SSMS\SmallShopManagementSystem\SmallShopManagementSystem\obj\Debug\SmallShopManagementSystem.pdb

@@ -65,7 +65,7 @@ namespace SSMS.DAL.DAL
         }
 
 
-        public List<Purchase> Show(int index)
+        public List<Purchase> Show()
         {
             return _db.Purchases.ToList();
         }

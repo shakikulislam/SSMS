@@ -23,8 +23,8 @@ function createRowForPurchase() {
     //For Serial No For UI
     var slTd = "<td id='Sl" + index + "'> " + (++sl) + " </td>";
 
-    var productCell = "<td> <input type='hidden' id='ProductName" + index + "'  name='PurchaseDetailses[" + index + "].Product.Name' value='" + selectedItem.ProductName + "' /> " + selectedItem.ProductName + " </td>";
-    var codeCell = "<td> <input type='hidden' id='ProductCode" + index + "'  name='PurchaseDetailses[" + index + "].Code' value='" + selectedItem.ProductCode + "' /> " + selectedItem.ProductCode + " </td>";
+    var productCell = "<td> <input type='hidden' id='IdProduct" + index + "'  name='PurchaseDetailses[" + index + "].ProductCode' value='" + selectedItem.IdProduct + "' /> " + selectedItem.IdProduct + " </td>";
+    //var codeCell = "<td> <input type='hidden' id='ProductCode" + index + "'  name='PurchaseDetailses[" + index + "].Code' value='" + selectedItem.ProductCode + "' /> " + selectedItem.ProductCode + " </td>";
     var manufacturedDateCell = "<td> <input type='hidden' id='ProductManufacturedDate" + index + "'  name='PurchaseDetailses[" + index + "].ManufacturedDate' value='" + selectedItem.ProductManufacturedDate + "' /> " + selectedItem.ProductManufacturedDate + " </td>";
     var expireDateCell = "<td> <input type='hidden' id='ProductExpireDate" + index + "'  name='PurchaseDetailses[" + index + "].ExpireDate' value='" + selectedItem.ProductExpireDate + "' /> " + selectedItem.ProductExpireDate + " </td>";
     var quantityCell = "<td> <input type='hidden' id='ProductQuantity" + index + "'  name='PurchaseDetailses[" + index + "].Quantity' value='" + selectedItem.ProductQuantity + "' /> " + selectedItem.ProductQuantity + " </td>";
@@ -37,11 +37,11 @@ function createRowForPurchase() {
 
 
 
-    var newRow = "<tr>" + indexTd + slTd + productCell + codeCell + manufacturedDateCell + expireDateCell + quantityCell + unitPriceCell + totalPriceCell + previousCostPriceCell + previousMrpCell + newCostPriceCell + newMrpCell + " </tr>";
+    var newRow = "<tr>" + indexTd + slTd + productCell + manufacturedDateCell + expireDateCell + quantityCell + unitPriceCell + totalPriceCell + previousCostPriceCell + previousMrpCell + newCostPriceCell + newMrpCell + " </tr>";
 
     $("#PurchaseDetailsTable").append(newRow);
-    $("#ProductName").val("");
-    $("#ProductCode").val("");
+    $("#IdProduct").val("");
+    //$("#ProductCode").val("");
     $("#ProductManufacturedDate").val("");
     $("#ProductExpireDate").val("");
     $("#ProductQuantity").val("");
@@ -57,21 +57,23 @@ function createRowForPurchase() {
 
 
 function getSelectedItem() {
-    var productName = $("#ProductName").val();
-    var productCode = $("#ProductCode").val();
+    var idProduct = $("#IdProduct").val();
+    //var productCode = $("#ProductCode").val();
     var productManufacturedDate = $("#ProductManufacturedDate").val();
     var productExpireDate = $("#ProductExpireDate").val();
     var productQuantity = $("#ProductQuantity").val();
     var productUnitPrice = $("#ProductUnitPrice").val();
-    var productTotalPrice = $("#ProductTotalPrice").val();
+    var productTotalPrice = productQuantity * productUnitPrice;
     var productPreviousCostPrice = $("#ProductPreviousCostPrice").val();
     var productPreviousMrp = $("#ProductPreviousMrp").val();
-    var productNewCostPrice = $("#ProductNewCostPrice").val();
-    var productNewMrp = $("#ProductNewMrp").val();
+    var productNewCostPrice = productUnitPrice;
+    //var productNewMrp = $("#ProductNewMrp").val();
+    var productNewMrp = (productUnitPrice / 100) * 25;
+
 
     var item = {
-        "ProductName": productName,
-        "ProductCode": productCode,
+        "IdProduct": idProduct,
+        //"ProductCode": productCode,
         "ProductManufacturedDate": productManufacturedDate,
         "ProductExpireDate": productExpireDate,
         "ProductQuantity": productQuantity,
@@ -83,9 +85,24 @@ function getSelectedItem() {
         "ProductNewMrp": productNewMrp
 
 
+
     };
 
 
+    //$("#ProductQuantity,#ProductUnitPrice").keyup(function () {
+    //    $('#ProductTotalPrice').val($('#ProductQuantity').val() * $('#ProductUnitPrice').val());
+    //});
+
+
+   
+    //$(function () {
+    //    $("#ProductUnitPrice").change(function () { // input on change
+    //        var result = parseFloat(parseInt($("#ProductUnitPrice").val(), 10)*25) / parseInt($("#ProductUnitPrice").val(), 10);
+    //        $('#ProductTotalPrice').val(result || ''); //shows value in "#rate"
+    //    })
+    //});
+
+    
 
 
     return item;

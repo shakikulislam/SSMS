@@ -10,7 +10,7 @@
 
 
         <div class="panel-group">
-            <div class="panel panel-success">
+            <div class="panel panel-primary">
                 <div class="panel-heading">
                     <div class="panel-title">Purchase Header</div>
                 </div>
@@ -29,15 +29,25 @@
                         </div>
 
                     </div>
+                    
+                    <div class="form-group row">
+                        @Html.LabelFor(m => m.Supplier, "Supplier *", new { @class = "control-label col-md-4" })
+                        <div class="col-md-4">
+                            @*@Html.DropDownListFor(m => m.SupplierId, Model.SupplierLookUp, new { @class = "form-control" })*@
+                            @Html.DropDownListFor(m => m.SupplierId, Model.SupplierLookUp ?? new List<SelectListItem>(), new { @class = "form-control" })
+                            
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
 
-
+        
 
 
         <div class="panel-group">
-            <div class="panel panel-success">
+            <div class="panel panel-primary">
                 <div class="panel-heading">
                     <div class="panel-title">Added Purchase Details Items</div>
                 </div>
@@ -45,20 +55,20 @@
                 </div>
                 <div class="panel-body">
                     <div class="form-group row">
-                        @Html.@Html.Label("ProductName", "Product *", new { @class = "control-label col-md-4" })
+                        @Html.Label("IdProduct", "Product *", new { @class = "control-label col-md-4" })
                         <div class="col-md-4">
-                            @Html.TextBox("ProductName", null, new { @class = "form-control" })
-                            @*@Html.DropDownListFor<>("m => m.ProductId", Model.ProductLookUp, new { @class = "form-control" })*@
+                            @Html.DropDownList("IdProduct", Model.ProductLookUp ?? new List<SelectListItem>(), new { @class = "form-control" })
+
 
                         </div>
 
                     </div>
                     <div class="form-group row">
-                        @Html.Label("ProductCode", "Code *", new { @class = "control-label col-md-4" })
+                        @Html.LabelFor(m => m.Product.Code, "Code *", new { @class = "control-label col-md-4" })
                         <div class="col-md-4">
-                            @Html.TextBox("ProductCode", null, new { @class = "form-control" })
+                            @Html.TextBoxFor(m => m.Product.Code, null, new { @class = "form-control", @readonly = "readonly" })
                         </div>
-
+                        
                     </div>
                 </div>
                 <div class="panel-body">
@@ -130,7 +140,7 @@
                             @Html.TextBox("ProductNewMrp", null, new { @class = "form-control" })
                         </div>
                         <div class="col-md-4 col-md-offset-4">
-                            <input type="button" id="AddButton" class="btn btn-success" value="Add" />
+                            <input type="button" id="AddButton" class="btn btn-info" value="Add" />
 
                         </div>
                     </div>
@@ -141,7 +151,7 @@
 
 
         <div class="panel-group">
-            <div class="panel panel-success">
+            <div class="panel panel-primary">
                 <div class="panel-heading">
                     <div class="panel-title">Purchase Details</div>
                 </div>
@@ -149,7 +159,7 @@
                     <table class="table table-bordered table-hover table-striped table-responsive">
                         <thead>
 
-                            <tr>
+                            <tr style="background-color: lightskyblue; color: white; font-weight: bold">
                                 <td>SL</td>
                                 <td>Products(Code)</td>
                                 <td>Manufactured Date</td>
@@ -162,23 +172,27 @@
                                 <td>New CP</td>
                                 <td>New MRP</td>
                                 <td>Action</td>
-
+                                
                             </tr>
+                            
+                                   
+                            }
+                          
+                            
 
                         </thead>
                         <tbody id="PurchaseDetailsTable"></tbody>
                     </table>
 
-
                 </div>
+
+
             </div>
+            @*@Html.ActionLink("Delete", "Delete", "Purchases", new { @target = "_blank" })*@
+
+
         </div>
     </div>
-
-
-
-
-
 
 
 
@@ -187,7 +201,7 @@
 
     <hr />
     <div class="col-md-4 col-md-offset-4">
-        <input type="submit" class="btn btn-success" value="Save" />
+        <input type="submit" class="btn btn-info" value="Save" />
     </div>
 }
 

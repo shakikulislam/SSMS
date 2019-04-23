@@ -1,16 +1,16 @@
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.DAL.dll.config
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.DAL.dll
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.DAL.pdb
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\EntityFramework.dll
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\EntityFramework.SqlServer.dll
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.DatabaseContext.dll
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.Models.dll
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\System.Web.Mvc.dll
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.DatabaseContext.pdb
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.Models.pdb
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\EntityFramework.xml
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\EntityFramework.SqlServer.xml
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\System.Web.Mvc.xml
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\obj\Debug\SSMS.DAL.csprojResolveAssemblyReference.cache
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\obj\Debug\SSMS.DAL.dll
-E:\My Create\VS2013\BITM\WEB\SSMS\SmallShopManagementSystem\SSMS.DAL\obj\Debug\SSMS.DAL.pdb
+E:\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.DAL.dll.config
+E:\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.DAL.dll
+E:\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.DAL.pdb
+E:\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\EntityFramework.dll
+E:\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.DatabaseContext.dll
+E:\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.Models.dll
+E:\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\System.Web.Mvc.dll
+E:\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.DatabaseContext.pdb
+E:\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\SSMS.Models.pdb
+E:\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\EntityFramework.xml
+E:\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\SSMS\SmallShopManagementSystem\SSMS.DAL\bin\Debug\System.Web.Mvc.xml
+E:\SSMS\SmallShopManagementSystem\SSMS.DAL\obj\Debug\SSMS.DAL.csprojResolveAssemblyReference.cache
+E:\SSMS\SmallShopManagementSystem\SSMS.DAL\obj\Debug\SSMS.DAL.dll
+E:\SSMS\SmallShopManagementSystem\SSMS.DAL\obj\Debug\SSMS.DAL.pdb
