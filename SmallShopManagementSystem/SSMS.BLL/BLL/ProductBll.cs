@@ -37,5 +37,11 @@ namespace SSMS.BLL.BLL
             return _productRepository.Show(index);
 
         }
+        public List<Product> GetProductList()
+        {
+            var model = new List<Product>();
+            model = _productRepository.GetProductList();
+            return model;
+        }
     }
 }

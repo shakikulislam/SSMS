@@ -6,7 +6,11 @@
     <WebStackScaffolding_IsReferencingScriptLibrariesSelected>False</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
+<<<<<<< HEAD
     <ProjectView>ProjectFiles</ProjectView>
+=======
+    <WebStackScaffolding_DbContextTypeFullName>SSMS.DatabaseContext.DatabaseContext.SSMSDbContext</WebStackScaffolding_DbContextTypeFullName>
+>>>>>>> 09a3301de4e64208b5fec0e2b2bb41ba6d79129b
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>

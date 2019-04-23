@@ -2,7 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+<<<<<<< HEAD
 using System.ComponentModel.DataAnnotations;
+=======
+using System.ComponentModel.DataAnnotations.Schema;
+>>>>>>> 09a3301de4e64208b5fec0e2b2bb41ba6d79129b
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +26,8 @@ namespace SSMS.Models.Models
         [Required]
         public string Contact { get; set; }
 
+        
+
         [DisplayName("Loyality Point")]
         public string LoyalityPoint { get; set; }
         public byte[] Image { get; set; }
@@ -29,5 +35,8 @@ namespace SSMS.Models.Models
         {
             throw new NotImplementedException();
         }
+
+        [NotMapped]
+        public List<System.Web.Mvc.SelectListItem> CustomerLookUp { get; set; }
     }
 }

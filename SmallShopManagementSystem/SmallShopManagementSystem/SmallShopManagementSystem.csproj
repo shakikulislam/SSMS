@@ -105,7 +105,13 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\SSMS\Customer\CustomerDelete.js" />
     <Content Include="Scripts\SSMS\Customer\ShowImageUpload.js" />
+<<<<<<< HEAD
     <Content Include="Scripts\SSMS\Purchase\PurchaseCreate.js" />
+=======
+    <Content Include="Scripts\SSMS\Sale\AutoDropdownCustomer.js" />
+    <Content Include="Scripts\SSMS\Sale\AutoDropdownProduct.js" />
+    <Content Include="Scripts\SSMS\Sale\SaleCreate.js" />
+>>>>>>> 09a3301de4e64208b5fec0e2b2bb41ba6d79129b
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -115,7 +121,11 @@
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
+<<<<<<< HEAD
     <Compile Include="Controllers\PurchasesController.cs" />
+=======
+    <Compile Include="Controllers\SalesController.cs" />
+>>>>>>> 09a3301de4e64208b5fec0e2b2bb41ba6d79129b
     <Compile Include="Controllers\SuppliersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -143,10 +153,14 @@
     <Content Include="Views\Customers\Update.cshtml" />
     <Content Include="Views\Customers\Delete.cshtml" />
     <Content Include="Views\Customers\Show.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Purchases\Add.cshtml" />
     <Content Include="Views\Purchases\Update.cshtml" />
     <Content Include="Views\Purchases\Show.cshtml" />
     <Content Include="Views\Purchases\Delete.cshtml" />
+=======
+    <Content Include="Views\Sales\Create.cshtml" />
+>>>>>>> 09a3301de4e64208b5fec0e2b2bb41ba6d79129b
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -28,6 +28,8 @@
         <tr><td>@Html.TextBoxFor(c => c.Name, new { @class = "form-control" })</td></tr>
         <tr><td>@Html.LabelFor(c => c.Category)</td></tr>
         <tr><td>@Html.DropDownListFor(c => c.CategoryId, Model.CategoryLookUp, new { @class = "form-control" })</td></tr>
+        <tr><td>@Html.LabelFor(c => c.AvailableQuantity)</td></tr>
+        <tr><td>@Html.TextBoxFor(c => c.AvailableQuantity)</td></tr>
         <tr><td>@Html.LabelFor(c => c.ReorderLevel)</td></tr>
         <tr><td>@Html.TextBoxFor(c => c.ReorderLevel, new { @class = "form-control" })</td></tr>
         <tr><td>@Html.LabelFor(c => c.Description)</td></tr>

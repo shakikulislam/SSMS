@@ -20,7 +20,12 @@ namespace SSMS.Models.Models
         public string Name { get; set; }
         public virtual Category Category { get; set; }
         public int CategoryId { get; set; }
+<<<<<<< HEAD
         [Required]
+=======
+        public int AvailableQuantity { get; set; }
+
+>>>>>>> 09a3301de4e64208b5fec0e2b2bb41ba6d79129b
         [DisplayName("Reorder Level")]
         public int ReorderLevel { get; set; }
         public string Description { get; set; }
@@ -28,6 +33,8 @@ namespace SSMS.Models.Models
         [NotMapped]
         public List<SelectListItem> CategoryLookUp { get; set; }
         public ICollection<Purchase> Purchases { get; set; }
+
+
 
     }
 }
