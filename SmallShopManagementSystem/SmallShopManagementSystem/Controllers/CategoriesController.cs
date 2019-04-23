@@ -15,6 +15,7 @@ namespace SmallShopManagementSystem.Controllers
         public ActionResult Add()
         {
             return View();
+           
         }
 
         [HttpPost]
@@ -26,6 +27,7 @@ namespace SmallShopManagementSystem.Controllers
                 if (added)
                 {
                     ViewBag.SMsg = "Save Success.";
+                    
                 }
                 else
                 {
@@ -37,6 +39,7 @@ namespace SmallShopManagementSystem.Controllers
             {
                 ViewBag.FMsg = exception.Message;
             }
+            ModelState.Clear();
             return View();
 
         }
@@ -79,6 +82,7 @@ namespace SmallShopManagementSystem.Controllers
             {
                 ViewBag.FMsg = exception.Message;
             }
+            
             return View();
         }
 

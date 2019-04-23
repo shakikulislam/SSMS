@@ -54,9 +54,11 @@
 
 
                         <td>
-                            @Html.ActionLink("Edit,", "Update", "Suppliers", new { code = aSupplier.Code }, new { @target = "_blank" })
-                            @Html.ActionLink("Delete", "Delete", "Suppliers", new { code = aSupplier.Code }, new { @target = "_blank" })
+                            @Ajax.ActionLink("Edit,", "Update", "Suppliers", new { code = aSupplier.Code }, new AjaxOptions { HttpMethod = "POST", Confirm = "Are you sure ?", UpdateTargetId = "TheDivToUpdate" }, null)
+                            @Ajax.ActionLink("Delete", "Delete", "Suppliers", new { code = aSupplier.Code }, new AjaxOptions { HttpMethod = "POST", Confirm = "Are you sure ?", UpdateTargetId = "TheDivToUpdate" }, null)
 
+
+                           
                         </td>
 
                     </tr>
